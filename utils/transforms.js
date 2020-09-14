@@ -32,7 +32,7 @@ module.exports = {
                     width: 1280,
                     height: 800,
                     timeout: 30000,
-                    destFolder: './dist'
+                    folder: './dist'
                 }
                 const html = await critical.generate(config)
                 return html
