@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ meta.lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ meta.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
+    {% include "meta.njk" %}
+</head>
+<body>
+    <div hidden>{% iconsprite %}</div>
+    <svg style="position: absolute; top: -999999px;" height="0" width="0" xmlns="http://www.w3.org/2000/svg" width="759" height="662.7" viewBox="0 0 759 662.7" overflow="visible"><clipPath clipPathUnits="objectBoundingBox" transform="scale(0.00131752306 0.00150897842)" id="image-mask"><path d="M6.3 343.16c-31.96 99.53 62 178.23 185.55 152.07s104.48 59.99 200.24 132.25c0 0 106.25 70.29 231.65 12.28s186.45-228.58 82.21-347.55c.01 0-461.68-690.22-699.65 50.95z" opacity=".5" fill="#86a7ce"/></clipPath></svg>
+
+    <a href="#main" class="sr-skip-link">skip to main content</a>
+
+    <div class="layout" role="document">
+        {% include "header.njk" %}
+        <main id="main" class="main" tabindex="-1">
+            {{ content | safe }}
+        </main>
+        {% include "footer.njk" %}
+    </div>
+
+    <script type="text/javascript" src="{{ '/assets/scripts/main.js' | url }}"></script>
+</body>
+</html>

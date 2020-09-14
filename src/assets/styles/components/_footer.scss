@@ -1,0 +1,125 @@
+.footer {
+    padding: 4 * $spacing $spacing 2 * $spacing;
+
+    @include mq(md) {
+      padding: 5 * $spacing 0 $spacing;
+    }
+    background-color: $brand-blue;
+    color: a11y-color(ms(-1), false, $brand-blue, $brand-blue);
+    -webkit-font-smoothing: antialiased;
+
+    &__brand {
+      position: relative;
+    }
+
+    &__name {
+      font-size: ms(4);
+      text-transform: lowercase;
+      line-height: 1;
+      padding-left: 2.75 * $spacing;
+    }
+
+    &__description {
+      font-size: ms(1);
+      text-transform: lowercase;
+      font-weight: $font-weight-bold;
+      padding-left: 2.75 * $spacing;
+      margin-bottom: $spacing;
+      @include mq(md) {
+        margin-bottom: 0;
+      }
+
+    }
+
+    &__small-print,
+    &__small-print--mobile {
+      font-size: ms(-1);
+      margin-top: $spacing/2;
+      @include mq(md) {
+        margin-left: 2.75 * $spacing;
+        max-width: $text-line-length-long;
+      }
+      a {
+        border-bottom: 0.1em solid a11y-color(ms(-1), false, $brand-blue, $brand-blue);
+      }
+    }
+
+    &__small-print--mobile {
+      @include mq(lg) {
+        display: none;
+      }
+    }
+
+    .icon--loop {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.25 * $spacing;
+      height: auto;
+      opacity: 1;
+      stroke-width: 0.3rem;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menus {
+      display: none;
+      @include mq(md) {
+        display: flex;
+      }
+      flex: 1 0;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    &__menu-heading {
+      color: white;
+      font-weight: $font-weight-bold;
+      margin-top: $spacing/4;
+      margin-bottom: $spacing;
+
+    }
+
+    &__menu {
+      margin-left: 1.5 * $spacing;
+      flex: 0 1 auto;
+
+      a {
+        font-size: ms(0);
+        display: block;
+        margin-bottom: $spacing/2;
+      }
+
+      svg {
+        vertical-align: middle;
+        // float: left;
+        display: inline-block;
+        width: $spacing * 0.65;
+        height: auto;
+        opacity: 0.35;
+        margin-right: $spacing/3;
+        margin-left: -$spacing;
+      }
+
+      &--contact {
+        a {
+          padding-left: $spacing;
+        }
+      }
+    }
+
+    a {
+      color: a11y-color(ms(0), true, $brand-blue, $brand-blue);
+      text-decoration: none;
+      transition: color $duration;
+      &:focus {
+        outline-color: white;
+      }
+      &:focus, &:hover {
+        color: white;
+      }
+    }
+}

@@ -1,0 +1,62 @@
+.header {
+  background-color: #fff;
+  padding: $spacing 0;
+  position: relative;
+  z-index: 9;
+  box-shadow: none;
+  @include landscape {
+    box-shadow: $box-shadow;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    @include landscape {
+      justify-content: space-between;
+    }
+    align-items: center;
+  }
+
+  &__brand {
+    display: inline-block;
+    position: relative;
+    padding-left: 2.5 * $spacing;
+    text-decoration: none;
+    color: a11y-color(ms(1), true, $brand-blue, #fff);
+  }
+
+  &__name {
+    font-size: ms(3);
+    text-transform: lowercase;
+    line-height: 1;
+    font-weight: $font-weight-bold;
+  }
+
+  &__description {
+    font-size: ms(1);
+    text-transform: lowercase;
+    font-weight: $font-weight-bold;
+  }
+
+  .icon--loop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.25 * $spacing;
+    height: auto;
+    opacity: 1;
+    stroke-width: 0.3rem;
+    margin-top: -0.35 * $spacing;
+  }
+
+  &__call {
+    display: none;
+    @include landscape {
+      display: block;
+    }
+    font-size: ms(1);
+    text-decoration: none;
+    font-weight: 900;
+    color: a11y-color(ms(1), true, $brand-green, #fff);
+  }
+}

@@ -1,0 +1,82 @@
+.home-contact {
+  background-color: $brand-light-green;
+  padding: 2 * $spacing 0;
+  position: relative;
+  z-index: 3;
+
+  .container {
+    @include landscape {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    flex: 0 0 55%;
+    background-color: transparentize(#fff, 0.05);
+    position: relative;
+    z-index: 9;
+    padding: 2 * $spacing $spacing;
+    box-shadow: $box-shadow-elevated;
+
+    @include landscape {
+      padding: 2 * $spacing;
+    }
+    p {
+      font-size: ms(1);
+      max-width: $text-line-length-long;
+      margin-bottom: $spacing;
+    }
+  }
+
+  &__heading {
+    font-size: ms(4);
+    color: a11y-color(ms(4), true, $brand-blue, $brand-light-green);
+    margin-bottom: $spacing/2;
+    max-width: $text-line-length;
+  }
+
+  &__image {
+    margin-top: -$spacing;
+    @include landscape {
+      margin-top: 0;
+      top: -$spacing;
+      right: 5%;
+      position: absolute;
+      bottom: -$spacing;
+      width: 100%;
+      // @include mq-down(lg) {
+      //   z-index: -1;
+      // }
+    }
+
+
+
+
+    img {
+      width: 100%;
+      margin-right: -20%;
+      margin-bottom: -3 * $spacing;
+      @include landscape {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: auto;
+      }
+      display: block;
+      margin-left: auto;
+      height: 100%;
+      clip-path: url('#image-mask');
+    }
+  }
+
+  &__call {
+    font-size: ms(3);
+    text-decoration: none;
+    font-weight: 900;
+    color: $brand-green;
+    color: a11y-color(ms(3), true, $brand-green, $brand-light-green);
+  }
+
+}

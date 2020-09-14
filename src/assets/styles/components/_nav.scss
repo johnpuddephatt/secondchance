@@ -1,0 +1,54 @@
+.nav {
+  background-color: #fff;
+  position: relative;
+  z-index: 8;
+  border-top: 0.5px solid transparentize($brand-gold, 0.9);
+  margin-bottom: 2 * $spacing;
+  box-shadow: $box-shadow;
+
+  @include landscape {
+    border-top: none;
+    background-color: transparent;
+    padding: $spacing 0;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  &__menu {
+      display: flex;
+      justify-content: center;
+
+      @include landscape {
+        justify-content: flex-end;
+      }
+
+      margin-left: -$spacing;
+      margin-right: -$spacing;
+  }
+  &__link {
+      font-size: ms(1);
+      display: block;
+      padding: $spacing/2 $spacing;
+      color: a11y-color(ms(1), false, $brand-gold);
+
+      text-decoration: none;
+      text-transform: lowercase;
+      border-radius: $border-radius;
+
+      &--active {
+        background-color: #fff;
+        color: a11y-color(ms(1), false, $brand-gold, #fff);
+      }
+  }
+  &__toggle {
+      @include button-reset;
+      display: none;
+  }
+
+  @include mq-down(lg) {
+      &.is-open &__menu {
+          display: block;
+      }
+  }
+
+}

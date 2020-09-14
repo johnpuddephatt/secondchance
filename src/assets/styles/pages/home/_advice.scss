@@ -1,0 +1,66 @@
+.home-advice {
+  padding: 2 * $spacing $spacing;
+  @include landscape {
+    padding: 4 * $spacing 0;
+  }
+  position: relative;
+  z-index: 1;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include landscape {
+      flex-direction: row;
+    }
+  }
+
+  &__text {
+    flex: 0 1 45%;
+
+    p {
+      font-size: ms(1);
+      max-width: $text-line-length;
+      margin-bottom: $spacing;
+    }
+  }
+
+  &__heading {
+    font-size: ms(4);
+    color: a11y-color(ms(4), true, $brand-green);
+    margin-bottom: 1.5 * $spacing;
+    max-width: $text-line-length;
+
+  }
+
+  &__sections {
+    position: relative;
+    z-index: 9;
+    width: 100%;
+
+    @include landscape {
+      flex: 0 0 35%;
+      margin-right: 2 * $spacing;
+    }
+
+    .button {
+      display: block;
+      margin-bottom: $spacing/2;
+      white-space: nowrap;
+      @include mq(md) {
+        margin-bottom: $spacing;
+      }
+    }
+  }
+
+  &--loop {
+    right: 0;
+    bottom: 0;
+    transform: translate(15%,35%) rotate(10deg);
+    height: auto;
+    position: absolute;
+    color: $brand-peach;
+  }
+}

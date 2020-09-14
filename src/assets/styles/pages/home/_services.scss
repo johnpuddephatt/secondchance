@@ -1,0 +1,89 @@
+.home-services {
+  padding: 4 * $spacing 0 8 * $spacing;
+  position: relative;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include landscape {
+      flex-direction: row;
+    }
+  }
+
+  &__text {
+    flex: 0 0 45%;
+    padding: $spacing $spacing 0;
+
+    @include landscape {
+      padding: 0;
+    }
+    p {
+      font-size: ms(1);
+      max-width: $text-line-length-long;
+      margin-bottom: $spacing;
+    }
+  }
+
+  &__heading {
+    font-size: ms(4);
+    color: a11y-color(ms(4), true, $brand-green);
+    margin-bottom: $spacing/2;
+    max-width: $text-line-length;
+  }
+
+  &__image {
+    position: relative;
+    flex: 0 0 45%;
+    margin-bottom: $spacing;
+    z-index: 99;
+
+    @include landscape {
+      margin-bottom: 0;
+      margin-right: 3 * $spacing;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &::after {
+      position: absolute;
+      top: 100%;
+      right: -$spacing;
+      width: 999999px;
+      content: '';
+      height: $spacing/2;
+      background-color: $brand-green;
+      display: block;
+    }
+  }
+
+  &--loop,
+  &--loop--top {
+    color: $brand-blue;
+    left: -2 * $spacing;
+    bottom: 0;
+    transform: translateY(22.5%) rotate(40deg);
+    height: auto;
+    position: absolute;
+    z-index: 9;
+    @include landscape {
+      transform: translateY(10%) rotate(63deg);
+      clip-path: polygon(25% 0, 100% 0%, 100% 100%, 44% 100%);
+    }
+  }
+
+  &--loop--top {
+    z-index: 999;
+    clip-path: polygon(0% 0%, 97% -38%, 30% 100%, 0% 100%);
+    display: none;
+
+    @include landscape {
+      display: block;
+    }
+  }
+}
