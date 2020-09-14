@@ -28,7 +28,10 @@
   &__link {
       font-size: ms(1);
       display: block;
-      padding: $spacing/2 $spacing;
+      padding: $spacing/2;
+      @include landscape {
+        padding: $spacing/2 $spacing;
+      }
       color: a11y-color(ms(1), false, $brand-gold);
 
       text-decoration: none;
