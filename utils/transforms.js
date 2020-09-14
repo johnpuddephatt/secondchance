@@ -31,7 +31,8 @@ module.exports = {
                     inline: true,
                     width: 1280,
                     height: 800,
-                    timeout: 30000
+                    timeout: 30000,
+                    destFolder: './dist'
                 }
                 const html = await critical.generate(config)
                 return html
