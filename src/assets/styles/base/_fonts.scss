@@ -3,8 +3,8 @@
     font-style: normal;
     font-display: block;
     font-weight: 400;
-    src: url('/assets/fonts/BrandonText-Medium.woff2') format('woff2'),
-        url('/assets/fonts/BrandonText-Medium.woff') format('woff');
+    src: url('../fonts/BrandonText-Medium.woff2') format('woff2'),
+        url('../fonts/BrandonText-Medium.woff') format('woff');
 }
 
 @font-face {
@@ -12,8 +12,8 @@
     font-style: normal;
     font-display: block;
     font-weight: 700;
-    src: url('/assets/fonts/BrandonText-Bold.woff2') format('woff2'),
-        url('/assets/fonts/BrandonText-Bold.woff') format('woff');
+    src: url('../fonts/BrandonText-Bold.woff2') format('woff2'),
+        url('../fonts/BrandonText-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -21,6 +21,6 @@
     font-style: normal;
     font-display: block;
     font-weight: 900;
-    src: url('/assets/fonts/BrandonText-Black.woff2') format('woff2'),
-        url('/assets/fonts/BrandonText-Black.woff') format('woff');
+    src: url('../fonts/BrandonText-Black.woff2') format('woff2'),
+        url('../fonts/BrandonText-Black.woff') format('woff');
 }

@@ -1,16 +1,16 @@
 <header class="header" role="banner">
-    <div class="header__inner container">
-        <div class="header__left">
-          <a href="/" class="header__brand">
-            <h3 class="header__name">{% icon "loop", "header__loop", 660, 572 %} {{ meta.title }}</h3>
-          </a>
-        </div>
-        <div class="header__right">
-        <a class="header__call" href="tel:{{meta.phone}}">
-        {% icon "phone" %} Call us: {{ meta.phone }}
-        </a>
-        </div>
+  <div class="header__inner container">
+    <div class="header__left">
+      <a href="/" class="header__brand">
+        <h3 class="header__name">{% icon "loop", "header__loop", 660, 572 %} {{ meta.title }}</h3>
+      </a>
     </div>
+    <div class="header__right">
+      <a class="button header__call" href="tel:{{ meta.phone | replace(' ','') }}">
+        {% icon "phone" %} Call us<span class="call-us">: {{ meta.phone }}</span>
+      </a>
+    </div>
+  </div>
 </header>
 
 {% include "navigation.njk" %}

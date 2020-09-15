@@ -21,15 +21,15 @@
         </nav>
         <nav class="footer__menu footer__menu--social">
           <h3 class="footer__menu-heading">Social media</h3>
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
+          {% if meta.facebook %}<a target="_blank" href="{{ meta.facebook}}">Facebook</a>{% endif %}
+          {% if meta.twitter %}<a target="_blank" href="{{ meta.twitter }}">Twitter</a>{% endif %}
+          {% if meta.instagram %}<a target="_blank" href="{{ meta.instagram }}">Instagram</a>{% endif %}
         </nav>
         <nav class="footer__menu footer__menu--contact">
           <h3 class="footer__menu-heading">Contact details</h3>
-          <a href="#">{% icon "phone" %} {{ meta.phone }}</a>
-          <a href="#">{% icon "email" %} {{ meta.email }}</a>
-          <a href="#">{% icon "letter" %} {{ meta.address.split(',').join(',<br>') | safe }}</a>
+          {% if meta.phone %}<a href="tel:{{ meta.phone | replace(' ','') }}">{% icon "phone" %} {{ meta.phone }}</a>{% endif %}
+          {% if meta.email %}<a href="mailto:{{ meta.email }}">{% icon "email" %} {{ meta.email }}</a>{% endif %}
+          {% if meta.address %}<a target="_blank" href="https://www.google.com/maps/place/{{ meta.address | urlencode }}/">{% icon "letter" %} {{ meta.address.split(',').join(',<br>') | safe }}</a>{% endif %}
         </nav>
       </div>
 

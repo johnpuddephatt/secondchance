@@ -10,17 +10,14 @@
 
   &__inner {
     display: flex;
-    justify-content: center;
-    @include landscape {
-      justify-content: space-between;
-    }
+    justify-content: space-between;
     align-items: center;
   }
 
   &__brand {
     display: inline-block;
     position: relative;
-    padding-left: 2.5 * $spacing;
+    padding-left: 2.25 * $spacing;
     text-decoration: none;
     color: a11y-color(ms(1), true, $brand-blue, #fff);
   }
@@ -42,7 +39,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 2.25 * $spacing;
+    width: 2 * $spacing;
     height: auto;
     opacity: 1;
     stroke-width: 0.3rem;
@@ -50,13 +47,27 @@
   }
 
   &__call {
-    display: none;
-    @include landscape {
-      display: block;
+    margin: -0.6rem 0;
+    .call-us {
+      display: none;
+      @include landscape {
+        display: inline;
+      }
     }
-    font-size: ms(1);
-    text-decoration: none;
-    font-weight: 900;
-    color: a11y-color(ms(1), true, $brand-green, #fff);
+
+    svg {
+      display: none;
+      @include landscape {
+        display: inline;
+      }
+    }
+
+    @include landscape {
+      border-color: transparent;
+      text-decoration: none;
+      text-transform: none;
+      font-weight: 900;
+      color: a11y-color(ms(1), true, $brand-green, #fff);
+    }
   }
 }

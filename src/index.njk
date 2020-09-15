@@ -32,7 +32,7 @@ layout: base
     <div class="home-contact__text">
       <h2 class="home-contact__heading section-title">Have you been discharged from hospital?</h2>
       <p>We provide specialist support for people with brain injury and deliver help and advice to their families and friends.</p>
-      <a class="home-contact__call" href="tel:{{ meta.phone }}">{% icon "phone" %} Call us: {{ meta.phone }}</a>
+      <a class="home-contact__call" href="tel:{{ meta.phone | replace(' ','') }}">{% icon "phone" %} Call us: {{ meta.phone }}</a>
     </div>
     <div class="home-contact__image">
       <img src="/assets/images/home-contact.jpg" />
