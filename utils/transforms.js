@@ -24,22 +24,21 @@ module.exports = {
 
     critical: async function (content, outputPath) {
         if (shouldTransformHTML(outputPath) && isHomePage(outputPath)) {
-            try {
-                const config = {
-                    base: `${buildDir}/`,
-                    html: content,
-                    inline: true,
-                    width: 1280,
-                    height: 800,
-                    timeout: 30000,
-                    folder: './dist'
-                }
-                const html = await critical.generate(config)
-                return html
-            } catch (err) {
-                console.error(err)
-            }
+         try {
+            const {css, html, uncritical} = await critical.generate({
+              base: `${buildDir}/`,
+              html: content,
+              width: 1300,
+              height: 900,
+              inline: true
+            });
+            return html;
+          } catch (err) {
+            console.error(err);
+          }
         }
-        return content
+        else {
+          return content;
+        }
     }
 }
