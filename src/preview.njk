@@ -1,17 +1,12 @@
 ---
 layout: base
 ---
-<style>
-nav.nav {
-visibility: hidden;
-padding-bottom: 0;
-}
-</style>
 
 <section class="home-hero">
   <div class="container">
       <h1 class="home-hero__title">{{ meta.description }}</h1>
-      <p class="home-hero__subtitle">We support people living with brain injury on their rehabilitation journey.</p>
+      <p class="home-hero__subtitle">Do you or someone you know have a brain injury?</p>
+      <a class="home-hero__start" href="/">Start here</a>
   </div>
   {% icon "loop", "loop--hero--left", 660, 572 %}
   {% icon "loop", "loop--hero--right", 660, 572 %}
@@ -25,6 +20,7 @@ padding-bottom: 0;
     <div class="home-services__text">
       <h2 class="home-services__heading section-title">We’re here to help you begin your rehabilitation journey with therapy, advice and activities.</h2>
       <p>Our team can help you create your own personal improvement plan through a wide variety of support and assistance.</p>
+      <a href="/" class="button">Learn about our services</a>
     </div>
   </div>
   {% icon "loop", "home-services--loop", 660, 572 %}
@@ -48,14 +44,14 @@ padding-bottom: 0;
   <div class="container">
     <div class="home-advice__text">
       <h2 class="home-advice__heading section-title">We know living with brain injury can be challenging.</h2>
-      <h2 class="home-advice__heading section-title">We can provide advice to help you understand some of the key issues.</h2>
+      <h2 class="home-advice__heading section-title">Our advice pages can help you to understand some of the key issues.</h2>
     </div>
     <nav class="home-advice__sections">
-      <p class="button button--white">Family and relationship advice</p>
-      <p class="button button--white">Money advice</p>
-      <p class="button button--white">Physical health advice</p>
-      <p class="button button--white">Mental health advice</p>
-      <p class="button button--white">Urgent support</p>
+      <a class="button button--white button--arrow" href="#">Family and relationship advice</a>
+      <a class="button button--white button--arrow" href="#">Money advice</a>
+      <a class="button button--white button--arrow" href="#">Physical health advice</a>
+      <a class="button button--white button--arrow" href="#">Mental health advice</a>
+      <a class="button button--white button--arrow" href="#">Urgent support</a>
     </nav>
   </div>
   {% icon "loop", "home-advice--loop", 660, 572 %}
@@ -70,6 +66,7 @@ padding-bottom: 0;
       <h2 class="home-casestudy__heading section-title">Peter’s second chance</h2>
       <p>“It's lovely to see Peter in a relaxed environment and enjoying his time there.”</p>
       <p>“It's clear to see he gets a lot out of the baking group and is really proud of what he makes each week.”</p>
+      <a href="/" class="button">Read more stories</a>
     </div>
   </div>
   {% icon "loop", "home-casestudy--loop", 660, 572 %}
@@ -81,7 +78,7 @@ padding-bottom: 0;
     <div class="home-support__text">
       <h2 class="home-support__heading section-title">Get involved supporting our essential work</h2>
       <p>We rely on your generosity to do the work we do. You can help us by volunteering your time, raising funds or making a donation.</p>
-      <a target="_blank" class="button button--green" href="https://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?charityId=1003077">Support Second Chance</a>
+      <a class="button button--green" href="/">Support Second Chance</a>
     </div>
     <div class="home-support__image">
       <img src="/assets/images/home-support.jpg" />

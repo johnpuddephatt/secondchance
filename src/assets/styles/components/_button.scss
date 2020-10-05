@@ -23,16 +23,11 @@
     color: $brand-blue;
     line-height: 2 * $line-height;
     transition: border-color 1s $animation-curve-default;
-    padding-right: $spacing;
     box-shadow: $box-shadow-elevated;
+  }
 
-    &:hover {
-      border-color: transparentize($brand-blue,0.5);
-
-      &::after {
-        opacity: 1;
-      }
-    }
+  &--arrow {
+    padding-right: $spacing;
 
     &::after {
       content: '>';
@@ -44,7 +39,14 @@
       opacity: 0.75;
       right: $spacing/4;
       transition: opacity 1s $animation-curve-default;
+    }
 
+    &:hover {
+      border-color: transparentize($brand-blue,0.5);
+
+      &::after {
+        opacity: 1;
+      }
     }
   }
 }
