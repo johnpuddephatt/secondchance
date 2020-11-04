@@ -28,7 +28,7 @@ module.exports = {
             const {css, html, uncritical} = await critical.generate({
               base: `${buildDir}/`,
               html: content,
-              width: 1300,
+              width: 1401,
               height: 900,
               inline: true
             });
