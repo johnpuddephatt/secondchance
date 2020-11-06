@@ -38,7 +38,6 @@
 
   &__heading {
     font-size: ms(5);
-    text-transform: lowercase;
     font-weight: $font-weight-bold;
     color: a11y-color(ms(4), true, $brand-blue, $gray-lightest);
     max-width: $text-line-length;
