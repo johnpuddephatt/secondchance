@@ -8,13 +8,13 @@
       </div>
 
       <div class="footer__menus">
-        <!--
           <nav class="footer__menu footer__menu--pages">
             <h3 class="footer__menu-heading">Pages</h3>
-            <a href="#">Advice</a>
-            <a href="#">Support</a>
-            <a href="#">Get help</a>
+            {%- for item in collections.all | eleventyNavigation -%}
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            {%- endfor -%}
           </nav>
+        <!--
           <nav class="footer__menu footer__menu--pages">
             <h3 class="footer__menu-heading">More information</h3>
             <a href="#">Privacy policy</a>
@@ -23,15 +23,15 @@
         -->
         <nav class="footer__menu footer__menu--social">
           <h3 class="footer__menu-heading">Social media</h3>
-          {% if meta.facebook %}<a target="_blank" href="{{ meta.facebook}}">Facebook</a>{% endif %}
-          {% if meta.twitter %}<a target="_blank" href="{{ meta.twitter }}">Twitter</a>{% endif %}
-          {% if meta.instagram %}<a target="_blank" href="{{ meta.instagram }}">Instagram</a>{% endif %}
+          {% if meta.facebook %}<a rel="noopener" target="_blank" href="{{ meta.facebook}}">Facebook</a>{% endif %}
+          {% if meta.twitter %}<a rel="noopener" target="_blank" href="{{ meta.twitter }}">Twitter</a>{% endif %}
+          {% if meta.instagram %}<a rel="noopener" target="_blank" href="{{ meta.instagram }}">Instagram</a>{% endif %}
         </nav>
         <nav class="footer__menu footer__menu--contact">
           <h3 class="footer__menu-heading">Contact details</h3>
           {% if meta.phone %}<a href="tel:{{ meta.phone | replace(' ','') }}">{% icon "phone" %} {{ meta.phone }}</a>{% endif %}
           {% if meta.email %}<a href="mailto:{{ meta.email }}">{% icon "email" %} {{ meta.email }}</a>{% endif %}
-          {% if meta.address %}<a target="_blank" href="https://www.google.com/maps/place/{{ meta.address | urlencode }}/">{% icon "letter" %} {{ meta.address.split(',').join(',<br>') | safe }}</a>{% endif %}
+          {% if meta.address %}<a rel="noopener" target="_blank" href="https://www.google.com/maps/place/{{ meta.address | urlencode }}/">{% icon "letter" %} {{ meta.address.split(',').join(',<br>') | safe }}</a>{% endif %}
         </nav>
       </div>
 

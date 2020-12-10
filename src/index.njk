@@ -2,7 +2,8 @@
 layout: base
 ---
 <style>
-nav.nav {
+nav.nav,
+.footer__menu--pages {
 visibility: hidden;
 padding-bottom: 0;
 }
@@ -20,7 +21,7 @@ padding-bottom: 0;
 <section class="home-services">
   <div class="container">
     <div class="home-services__image">
-      <img alt="Photo of seated woman holding man’s hand." src="/assets/images/home-services.jpg" />
+      {% srcset '/assets/images/home-services.jpg', 'Photo of seated woman holding man’s hand', 'null', 640, 480, '(min-width: 1560px) 630px, (min-width: 658px) 40vw, 95vw' %}
     </div>
     <div class="home-services__text">
       <h2 class="home-services__heading section-title">We’re here to help you begin your rehabilitation journey with therapy, advice and activities.</h2>
@@ -39,7 +40,7 @@ padding-bottom: 0;
       <a class="home-contact__call" href="tel:{{ meta.phone | replace(' ','') }}">{% icon "phone" %} Call us: {{ meta.phone }}</a>
     </div>
     <div class="home-contact__image">
-      <img alt="Close up of hand holding a mobile phone" src="/assets/images/home-contact.jpg" />
+      {% srcset '/assets/images/home-contact.jpg', 'Close up of hand holding a mobile phone', 'null', 700, 600, '(min-width: 1400px) 825px, (min-width: 1164px) 750px, 100vw' %}
     </div>
   </div>
 </section>
@@ -64,7 +65,7 @@ padding-bottom: 0;
 <section class="home-casestudy">
   <div class="container">
     <div class="home-casestudy__image">
-      <img alt="Photo of Second Chance member called Peter with freshly baked pasties" src="/assets/images/home-peterpasties.jpg" />
+      {% srcset '/assets/images/home-peterpasties.jpg', 'Photo of Second Chance member called Peter with freshly baked pasties', 'null', 640, 480, '(min-width: 1560px) 630px, (min-width: 658px) 40vw, 95vw' %}
     </div>
     <div class="home-casestudy__text">
       <h2 class="home-casestudy__heading section-title">Peter’s second chance</h2>
@@ -81,10 +82,10 @@ padding-bottom: 0;
     <div class="home-support__text">
       <h2 class="home-support__heading section-title">Get involved supporting our essential work</h2>
       <p>We rely on your generosity to do the work we do. You can help us by volunteering your time, raising funds or making a donation.</p>
-      <a target="_blank" class="button button--green" href="https://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?charityId=1003077">Support Second Chance</a>
+      <a rel="noopener" target="_blank" class="button button--green" href="https://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?charityId=1003077">Support Second Chance</a>
     </div>
     <div class="home-support__image">
-      <img alt="Photo of two women taking part in Great North Run to raise money for Second Chance" src="/assets/images/home-support.jpg" />
+      {% srcset '/assets/images/home-support.jpg', 'Photo of two women taking part in Great North Run to raise money for Second Chance', 'null', 700, 600, '(min-width: 1400px) 825px, (min-width: 1164px) 750px, 100vw' %}
     </div>
   </div>
 </section>

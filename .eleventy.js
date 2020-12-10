@@ -3,6 +3,7 @@ const pluginNavigation = require('@11ty/eleventy-navigation')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const pluginTOC = require('eleventy-plugin-toc')
+const pluginSrcsetImg = require('eleventy-plugin-srcset')
 
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
@@ -13,6 +14,7 @@ module.exports = function (config) {
     // Plugins
     config.addPlugin(pluginRss)
     config.addPlugin(pluginNavigation)
+    config.addPlugin( pluginSrcsetImg, {})
     config.addPlugin(pluginTOC, {
       tags: ['h2'],
       wrapper: 'div'
