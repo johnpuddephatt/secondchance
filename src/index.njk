@@ -37,7 +37,7 @@ padding-bottom: 0;
     <div class="home-contact__text">
       <h2 class="home-contact__heading section-title">Have you been discharged from hospital?</h2>
       <p>We provide specialist support for people with brain injury and deliver help and advice to their families and friends.</p>
-      <a class="home-contact__call" href="tel:{{ meta.phone | replace(' ','') }}">{% icon "phone" %} Call us: {{ meta.phone }}</a>
+      <a class="home-contact__call" href="tel:{{ meta.phone | replace(' ','') }}">{% icon "phone" %}<span class="call-us">Call us: </span>{{ meta.phone }}</a>
     </div>
     <div class="home-contact__image">
       {% srcset '/assets/images/home-contact.jpg', 'Close up of hand holding a mobile phone', 'null', 700, 600, '(min-width: 1400px) 825px, (min-width: 1164px) 750px, 100vw' %}

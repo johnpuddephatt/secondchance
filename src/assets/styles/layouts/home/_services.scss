@@ -1,6 +1,10 @@
 .home-services {
-  padding: 4 * $spacing 0 8 * $spacing;
   position: relative;
+  padding: 4 * $spacing 0 5 * $spacing;
+
+  @include mq(md) {
+    padding: 4 * $spacing 0 8 * $spacing;
+  }
 
   .container {
     display: flex;
@@ -15,7 +19,7 @@
 
   &__text {
     flex: 0 0 45%;
-    padding: $spacing $spacing 0;
+    padding: $spacing/2 $spacing/2 0;
 
     @include orientation(landscape) {
       padding: 0;

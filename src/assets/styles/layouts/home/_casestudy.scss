@@ -1,5 +1,10 @@
 .home-casestudy {
-  padding: 4 * $spacing 0;
+  padding: 2 * $spacing 0;
+
+  @include mq(md) {
+    padding: 4 * $spacing 0;
+  }
+
   position: relative;
   background-color: $gray-lightest;
   z-index: 0;
@@ -17,7 +22,7 @@
 
   &__text {
     flex: 0 0 45%;
-    padding: $spacing/2 $spacing 0;
+    padding: $spacing/2 $spacing/2 0;
     font-family: $font-family-heading;
 
     @include orientation(landscape) {

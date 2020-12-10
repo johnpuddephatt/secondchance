@@ -6,9 +6,11 @@
   justify-content: center;
   text-align: center;
   position: relative;
+  padding-top: 2 * $spacing;
 
   @include orientation(landscape) {
     height: 65vh;
+    padding-top: 0;
   }
 
   .container {
@@ -30,7 +32,7 @@
 
     @include orientation(landscape) {
       font-size: ms(7);
-      margin-bottom: 2 * $spacing;
+      margin-bottom: 1 * $spacing;
     }
   }
 

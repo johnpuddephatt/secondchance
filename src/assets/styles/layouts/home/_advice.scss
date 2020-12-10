@@ -1,5 +1,5 @@
 .home-advice {
-  padding: 2 * $spacing $spacing;
+  padding: 2 * $spacing $spacing/2;
   @include orientation(landscape) {
     padding: 4 * $spacing 0;
   }
@@ -50,7 +50,7 @@
       white-space: nowrap;
       font-family: $font-family-heading;
       margin-bottom: $spacing/2;
-      
+
       @include mq(md) {
         margin-bottom: $spacing;
       }

@@ -18,7 +18,7 @@
     background-color: transparentize(#fff, 0.05);
     position: relative;
     z-index: 9;
-    padding: 2 * $spacing $spacing;
+    padding: $spacing;
     box-shadow: $box-shadow-elevated;
 
     @include orientation(landscape) {
@@ -75,6 +75,15 @@
     font-weight: 900;
     color: $brand-green;
     color: a11y-color(ms(3), true, $brand-green, $brand-light-green);
+    .icon {
+      margin-right: $spacing/4;
+    }
+
+    .call-us {
+      @include mq-down(md) {
+        display: none;
+      }
+    }
   }
 
 }
