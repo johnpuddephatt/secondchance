@@ -4,7 +4,8 @@
   position: relative;
   z-index: 9;
   box-shadow: none;
-  @include landscape {
+
+  @include orientation(landscape) {
     box-shadow: $box-shadow;
   }
 
@@ -19,10 +20,10 @@
     position: relative;
     padding-left: 2.25 * $spacing;
     text-decoration: none;
-    color: a11y-color(ms(1), true, $brand-blue, #fff);
   }
 
   &__name {
+    color: a11y-color(ms(1), true, $brand-blue, #fff);
     font-size: ms(3);
     text-transform: lowercase;
     line-height: 1;
@@ -48,21 +49,30 @@
 
   &__call {
     margin: -0.6rem 0;
+    font-weight: $font-weight-bold;
+    font-family: $font-family-heading;
+
+    @include mq(md) {
+      padding-right: 0;
+    }
+
     .call-us {
       display: none;
-      @include landscape {
+
+      @include orientation(landscape) {
         display: inline;
       }
     }
 
     svg {
       display: none;
-      @include landscape {
+      
+      @include orientation(landscape) {
         display: inline;
       }
     }
 
-    @include landscape {
+    @include orientation(landscape) {
       border-color: transparent;
       text-decoration: none;
       text-transform: none;

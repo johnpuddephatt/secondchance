@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: flex-start;
 
-    @include landscape {
+    @include orientation(landscape) {
       flex-direction: row;
     }
   }
@@ -17,12 +17,12 @@
     flex: 0 0 45%;
     padding: $spacing $spacing 0;
 
-    @include landscape {
+    @include orientation(landscape) {
       padding: 0;
     }
     p {
       font-size: ms(1);
-      max-width: $text-line-length-long;
+      max-width: $text-line-length;
       margin-bottom: $spacing;
     }
   }
@@ -40,7 +40,7 @@
     margin-bottom: $spacing;
     z-index: 99;
 
-    @include landscape {
+    @include orientation(landscape) {
       margin-bottom: 0;
       margin-right: 3 * $spacing;
     }
@@ -71,7 +71,7 @@
     height: auto;
     position: absolute;
     z-index: 9;
-    @include landscape {
+    @include orientation(landscape) {
       transform: translateY(10%) rotate(63deg);
       clip-path: polygon(25% 0, 100% 0%, 100% 100%, 44% 100%);
     }
@@ -82,7 +82,7 @@
     clip-path: polygon(0% 0%, 97% -38%, 30% 100%, 0% 100%);
     display: none;
 
-    @include landscape {
+    @include orientation(landscape) {
       display: block;
     }
   }

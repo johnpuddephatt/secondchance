@@ -1,0 +1,35 @@
+---
+layout: base
+---
+{% set section = title | slug %}
+{% set section_pages = collections.pages | where("section", section) %}
+
+<div class="page">
+  <div class="page__container">
+
+    <article class="page__main">
+      <div class="page__inner">
+        <div class="page__content">
+
+          <div class="page__breadcrumb">
+            <a href="/">Home</a>
+          </div>
+
+          <h1 class="page__title">{{ title }}</h1>
+
+          <nav class="page__section-menu">
+            <ul>
+              {% for section_page in section_pages %}
+              <li>
+                <a class="page__section-menu__link" href="{{ section_page.url }}">{{ section_page.data.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+

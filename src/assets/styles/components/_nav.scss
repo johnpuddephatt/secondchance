@@ -3,10 +3,9 @@
   position: relative;
   z-index: 8;
   border-top: 0.5px solid transparentize($brand-gold, 0.9);
-  margin-bottom: 2 * $spacing;
   box-shadow: $box-shadow;
 
-  @include landscape {
+  @include orientation(landscape) {
     border-top: none;
     background-color: transparent;
     padding: $spacing 0;
@@ -15,43 +14,43 @@
   }
 
   &__menu {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
 
-      @include landscape {
-        justify-content: flex-end;
-      }
-
-      margin-left: -$spacing;
-      margin-right: -$spacing;
+    @include orientation(landscape) {
+      justify-content: flex-end;
+    }
   }
+
   &__link {
-      font-size: ms(1);
-      display: block;
-      padding: $spacing/2;
-      @include landscape {
-        padding: $spacing/2 $spacing;
-      }
-      color: a11y-color(ms(1), false, $brand-gold);
+    font-size: ms(1);
+    font-family: $font-family-heading;
+    display: block;
+    color: a11y-color(ms(1), false, $brand-gold);
+    text-decoration: none;
+    text-transform: lowercase;
+    border-radius: $border-radius;
+    padding: $spacing/2;
 
-      text-decoration: none;
-      text-transform: lowercase;
-      border-radius: $border-radius;
+    @include orientation(landscape) {
+      padding: $spacing/3 $spacing;
+    }
 
-      &--active {
-        background-color: #fff;
-        color: a11y-color(ms(1), false, $brand-gold, #fff);
-      }
+    &--active {
+      background-color: #fff;
+      color: a11y-color(ms(1), false, $brand-gold, #fff);
+    }
   }
+
   &__toggle {
-      @include button-reset;
-      display: none;
+    @include button-reset;
+
+    display: none;
   }
 
   @include mq-down(lg) {
-      &.is-open &__menu {
-          display: block;
-      }
+    &.is-open &__menu {
+        display: block;
+    }
   }
-
 }

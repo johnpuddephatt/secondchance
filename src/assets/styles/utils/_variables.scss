@@ -30,19 +30,17 @@ $z-layers: (
 // Grayscale.
 
 $gray-darkest: #333332;
-$gray-dark: #55595c;
-$gray: #818a91;
+$gray-dark: #5e5e5e;
+$gray-medium: #75767a;
+$gray: #919aa1;
 $gray-light: #efefec;
-$gray-lightest: #fffaf7;
+$gray-lightest: #f8f8f5;
 
 // Brand Colors
 
 $brand-blue: #2F5B91;
 $brand-light-blue: #86A7CE;
-// $brand-blue_AAA: #2F5A90 // AAA on white
 $brand-green: #3B8A80;
-// $brand-green_AAA_bold: #388279; // on white
-// $brand-green_AAA_small: #2A625B; // on white
 $brand-gold: #B09319;
 $brand-peach: #F7B385;
 $brand-pink: #f8e5f9;
@@ -51,7 +49,7 @@ $brand-light-green: #D7E2D5;
 // Color Mappings
 
 $bg-color: $gray-light;
-$text-color: $gray-darkest;
+$text-color: $gray-dark;
 
 $brand-color-primary: $brand-blue;
 $brand-color-primary-offset: darken($brand-blue, 6%);
@@ -62,7 +60,9 @@ $brand-color-action-offset: darken($brand-gold, 6%);
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: BrandonText, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+$font-family-heading: BrandonText;
+
+$font-family-sans-serif: Karla, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-family-serif: 'Times New Roman', Georgia, Times, serif;
@@ -72,16 +72,18 @@ $font-family-base: $font-family-sans-serif;
 
 $font-size-root: 100%;
 $font-size-base: 1rem;
-$line-height: 1.625;
+$line-height: 1.7;
+$line-height-medium: 1.4;
 $heading-line-height: 1.175;
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 $font-weight-black: 900;
 
-$text-line-length: 15em;
+$text-line-length: 20em;
 $text-line-length-short: 9em;
-$text-line-length-long: 20em;
+$text-line-length-long: 25em;
+$text-line-length-xl: 35em;
 
 $modularscale: (
   base: $font-size-base,

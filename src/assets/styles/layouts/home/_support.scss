@@ -5,7 +5,7 @@
   z-index: 3;
 
   .container {
-    @include landscape {
+    @include orientation(landscape) {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -21,12 +21,13 @@
     padding: 2 * $spacing $spacing;
     box-shadow: $box-shadow-elevated;
 
-    @include landscape {
+    @include orientation(landscape) {
       padding: 2 * $spacing;
     }
+
     p {
       font-size: ms(1);
-      max-width: $text-line-length-long;
+      max-width: $text-line-length;
       margin-bottom: $spacing;
     }
   }
@@ -40,7 +41,7 @@
 
   &__image {
     margin-top: -$spacing;
-    @include landscape {
+    @include orientation(landscape) {
       margin-top: 0;
       top: -$spacing;
       right: 5%;
@@ -53,7 +54,7 @@
       width: 100%;
       margin-right: -20%;
       margin-bottom: -3 * $spacing;
-      @include landscape {
+      @include orientation(landscape) {
         margin-right: 0;
         margin-bottom: 0;
         width: auto;
@@ -81,7 +82,7 @@
     height: auto;
     position: absolute;
 
-    @include landscape {
+    @include orientation(landscape) {
       transform: translateY(12.5%) rotate(60deg);
       top: auto;
       bottom: 0;

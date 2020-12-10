@@ -1,6 +1,17 @@
 const { DateTime } = require('luxon')
 
 module.exports = {
+
+    prepend_page_section: function(title, section) {
+      return section ? `${section}/${title}` : title;
+    },
+
+    where: function (array, key, value) {
+      return array.filter(item => {
+        return (item.data.section && (item.data.section === value) ? item : false);
+      });
+    },
+
     dateToFormat: function (date, format) {
         return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat(
             String(format)

@@ -13,13 +13,16 @@
     }
 
     &__name {
+      font-family: $font-family-heading;
       font-size: ms(4);
+      color: inherit;
       text-transform: lowercase;
       line-height: 1;
       padding-left: 2.75 * $spacing;
     }
 
     &__description {
+      font-family: $font-family-heading;
       font-size: ms(1);
       text-transform: lowercase;
       font-weight: $font-weight-bold;
@@ -35,10 +38,12 @@
     &__small-print--mobile {
       font-size: ms(-1);
       margin-top: $spacing/2;
+
       @include mq(md) {
         margin-left: 2.75 * $spacing;
         max-width: $text-line-length-long;
       }
+
       a {
         border-bottom: 0.1em solid a11y-color(ms(-1), false, $brand-blue, $brand-blue);
       }
@@ -66,13 +71,14 @@
     }
 
     &__menus {
-      display: none;
-      @include mq(md) {
-        display: flex;
-      }
       flex: 1 0;
       flex-direction: row;
       justify-content: flex-end;
+      display: none;
+
+      @include mq(md) {
+        display: flex;
+      }
     }
 
     &__menu-heading {
@@ -115,9 +121,11 @@
       color: a11y-color(ms(0), true, $brand-blue, $brand-blue);
       text-decoration: none;
       transition: color $duration;
+
       &:focus {
         outline-color: white;
       }
+      
       &:focus, &:hover {
         color: white;
       }

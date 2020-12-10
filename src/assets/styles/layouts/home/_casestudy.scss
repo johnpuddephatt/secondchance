@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: flex-start;
 
-    @include landscape {
+    @include orientation(landscape) {
       flex-direction: row;
     }
   }
@@ -18,8 +18,9 @@
   &__text {
     flex: 0 0 45%;
     padding: $spacing/2 $spacing 0;
+    font-family: $font-family-heading;
 
-    @include landscape {
+    @include orientation(landscape) {
       padding: 0;
     }
 
@@ -27,10 +28,10 @@
       font-size: ms(1);
       font-weight: $font-weight-bold;
       color: a11y-color(ms(1), true, $brand-blue, $gray-lightest);
-      max-width: $text-line-length-long;
+      max-width: $text-line-length;
       margin-bottom: $spacing/2;
 
-      @include landscape {
+      @include orientation(landscape) {
         margin-bottom: $spacing;
       }
     }
@@ -48,11 +49,12 @@
       width: 2 * $spacing;
       height: $spacing/4;
       margin-top: $spacing;
+      background-color: $brand-blue;
       margin-bottom: $spacing;
-      @include landscape {
+
+      @include orientation(landscape) {
         margin-bottom: 1.75 * $spacing;
       }
-      background-color: $brand-blue;
     }
   }
 
@@ -62,7 +64,7 @@
     margin-bottom: $spacing;
     z-index: 99;
 
-    @include landscape {
+    @include orientation(landscape) {
       margin-bottom: 0;
       margin-right: 3 * $spacing;
     }
@@ -94,5 +96,4 @@
     position: absolute;
     z-index: 9;
   }
-
 }

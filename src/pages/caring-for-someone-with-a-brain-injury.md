@@ -1,0 +1,46 @@
+---
+title: Caring for someone with a brain injury
+section: advice
+---
+
+## How might my loved one’s brain injury affect us?
+
+No family can ever be ready for a brain injury. Most people already have a plate full of problems to deal with before clearing the decks to cope with the unexpected issues caused by a brain injury. Whether you are the spouse, parent, child, sibling or close friend of someone with a brain injury, you are likely to face challenges you never imagined.
+
+> Try to be flexible and embrace change instead of clinging to how things should be or used to be. It can be incredibly difficult not to mourn for how things were, but it’s unlikely to help you feel productive and move forwards. Sometimes you just have to focus on one day at a time.
+
+To make all this easier to navigate, it’s a good idea to formulate a plan and share out responsibilities amongst your support network. Be transparent about how much you can manage and how you are feeling as often as you can. Communicating openly and honestly is very important. Express your emotions - both positive and negative - and recognise the needs of yourself and your family.
+
+## How might there be a change in roles and responsibilities?
+
+Adjustment to changes following a brain injury can be difficult for both the survivor and their friends and family. Partners - for example -  can find themselves with little or no support, despite often having to take on caring responsibilities. These changes can typically cause feelings of isolation, longing for the past and sadness.
+
+Changes in communication, personality, intimacy, behaviour and cognitive ability can all affect day-to-day life. These can also lead to other unexpected changes - for instance, a non-injured partner might need to take on new responsibilities the survivor previously looked after, such as managing household finances. This can be stressful for the non-injured partner, and also affect the survivor’s self-esteem.
+
+Acceptance for the new way of life can, however, set in over time, especially if the survivor continues to recover or learns coping strategies to regain their independence. Indeed, some relationships strengthen over time as the couple learn new ways of managing the effects of the injury and their relationship.
+
+## What can I do to look after myself?
+
+Being a part-time or full-time carer means considerable changes to the way you live. It’s absolutely vital to make time to look after yourself. It’s important to try and maintain your interests and social life - although it might seem difficult to balance this with the demands of being a carer, friendships are a vital part of a healthy, happy life.
+
+Getting out and seeing other people you love is an important source of emotional support, as well as the chance to get away from the demands of your home life for a while. This will help you recharge your batteries and make you feel stronger to look after both yourself and your relatives.
+
+> Continue with your hobbies and interests. This includes things you like doing with others, but also taking time on your own to enjoy things like music, reading and watching films. Making time for activities that make you happy can make all the difference to your quality of life.
+
+It’s also important to try and stay healthy. Being a carer is very stressful and time consuming - it can be easy to let yourself stop making the effort to eat healthily and engage in exercise. This is self-defeating, as being fit and healthy helps you deal with stress and cope better with everyday life.
+
+Maintaining a healthy lifestyle can counter the negative effects of stress and improve your sense of well-being. Try to take time to do whatever forms of exercise you enjoy and make the effort to eat a healthy, balanced diet. It is also important to remember to see your GP with any health concerns.
+
+You can find information on exercise and healthy eating on the NHS website.
+
+## What support is available for family members and personal carers?
+
+The UK-wide network of carers’ centres offers information, advice, practical help, advocacy, training, education and other kinds of services. You can find out more and search for your local centre on the Carers Trust website. The main Headway website also has a list of useful organisations for carers and families.
+
+Carer support groups are also available. Often the best source of support comes from other carers in a similar situation to yourself. Many of Headway’s groups and branches provide support group meetings and one-to-one support for carers. Your local council should be able to signpost you to other local groups too.
+
+If you provide care for somebody at least 35 hours a week, and they receive certain benefits, you may be able to receive Carer's Allowance. Click here for more information and to check whether you're eligible.
+
+Some social services departments operate voucher schemes to provide respite for carers. You can also pay for respite care directly. Contact your local social services to find out if they can help with this. Carers’ organisations and the Headway helpline can also provide details of respite and holiday providers.
+
+You can find out more about support and benefits for carers on the NHS website.

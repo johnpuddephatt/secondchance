@@ -4,9 +4,11 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: $font-family-heading;
   font-weight: $font-weight-black;
   margin: 0;
   line-height: $heading-line-height;
+  color: $gray-darkest;
 }
 
 h1 {
@@ -18,5 +20,12 @@ p {
 }
 
 a {
-  color: $brand-color-action;
+  color: $brand-blue;
+  text-decoration-color: transparentize($brand-blue, 0.85);
+  transition: text-decoration-color $duration;
+  // text-underline-position: under;
+
+  &:hover {
+    text-decoration-color: $brand-blue;
+  }
 }

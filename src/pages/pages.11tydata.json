@@ -1,0 +1,4 @@
+{
+  "layout": "page",
+  "permalink": "/{{ title | slug | prepend_page_section(section) }}/index.html"
+}

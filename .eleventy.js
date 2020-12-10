@@ -1,6 +1,8 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const markdownIt = require('markdown-it')
+const markdownItAnchor = require('markdown-it-anchor')
+const pluginTOC = require('eleventy-plugin-toc')
 
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
@@ -11,6 +13,10 @@ module.exports = function (config) {
     // Plugins
     config.addPlugin(pluginRss)
     config.addPlugin(pluginNavigation)
+    config.addPlugin(pluginTOC, {
+      tags: ['h2'],
+      wrapper: 'div'
+    })
 
     // Filters
     Object.keys(filters).forEach((filterName) => {
@@ -41,12 +47,19 @@ module.exports = function (config) {
             breaks: true,
             linkify: true,
             typographer: true
-        })
+        }).use(markdownItAnchor)
     )
+
+    // Collections
+    config.addCollection('pages', collection => {
+      return collection.getFilteredByGlob('src/pages/*.*');
+    });
 
     // Layouts
     config.addLayoutAlias('base', 'base.njk')
     config.addLayoutAlias('post', 'post.njk')
+    config.addLayoutAlias('page', 'page.njk')
+    config.addLayoutAlias('section', 'section.njk')
 
     // Pass-through files
     config.addPassthroughCopy('src/robots.txt')

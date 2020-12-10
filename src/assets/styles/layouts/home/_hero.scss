@@ -1,11 +1,4 @@
 .home-hero {
-  .container {
-    margin: 0 auto;
-    max-width: map-get($breakpoints, lg);
-    position: relative;
-    z-index: 9;
-  }
-
   height: 65vh;
   display: flex;
   flex-direction: column;
@@ -14,28 +7,36 @@
   text-align: center;
   position: relative;
 
-  @include landscape {
+  @include orientation(landscape) {
     height: 65vh;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: map-get($breakpoints, lg);
+    position: relative;
+    z-index: 9;
   }
 
   &__title {
     line-height: $heading-line-height;
-    font-size: ms(6);
-    margin-bottom: $spacing;
-
-    @include landscape {
-      font-size: ms(7);
-      margin-bottom: 2 * $spacing;
-    }
     font-weight: $font-weight-black;
     color: a11y-color(ms(7), true, $brand-green);
     max-width: $text-line-length-short;
     margin-left: auto;
     margin-right: auto;
+    font-size: ms(6);
+    margin-bottom: $spacing;
+
+    @include orientation(landscape) {
+      font-size: ms(7);
+      margin-bottom: 2 * $spacing;
+    }
   }
 
   &__subtitle {
-    line-height: $heading-line-height;
+    font-family: $font-family-heading;
+    line-height: $line-height-medium;
     color: a11y-color(ms(2), true, $brand-blue);
     margin: 0 auto $spacing;
     font-weight: $font-weight-bold;
@@ -65,15 +66,16 @@
   }
 
   .icon--loop {
+    color: $brand-blue;
     position: absolute;
     height: auto;
     left: 0;
     top: 0;
     transform: translate(-55%, 25%) rotate(65deg);
-    @include landscape {
+
+    @include orientation(landscape) {
       transform: translate(-57.5%, -75%) rotate(65deg);
     }
-    color: $brand-blue;
 
     &.loop--hero--right {
       left: auto;
@@ -81,10 +83,10 @@
       top: auto;
       bottom: 0;
       transform: translate(50%, -90%);
-      @include landscape {
+
+      @include orientation(landscape) {
         transform: translate(32.5%, 15%);
       }
     }
   }
-
 }

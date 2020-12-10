@@ -1,6 +1,6 @@
 .home-advice {
   padding: 2 * $spacing $spacing;
-  @include landscape {
+  @include orientation(landscape) {
     padding: 4 * $spacing 0;
   }
   position: relative;
@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    @include landscape {
+    @include orientation(landscape) {
       flex-direction: row;
     }
   }
@@ -40,15 +40,17 @@
     z-index: 9;
     width: 100%;
 
-    @include landscape {
+    @include orientation(landscape) {
       flex: 0 0 35%;
       margin-right: 2 * $spacing;
     }
 
     .button {
       display: block;
-      margin-bottom: $spacing/2;
       white-space: nowrap;
+      font-family: $font-family-heading;
+      margin-bottom: $spacing/2;
+      
       @include mq(md) {
         margin-bottom: $spacing;
       }

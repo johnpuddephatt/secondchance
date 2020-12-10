@@ -1,0 +1,186 @@
+.page {
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2 * $spacing;
+
+    @extend .container;
+
+    @include orientation(portrait) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include mq-down(lg) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__sidebar {
+    display: block;
+
+    @include orientation(portrait) {
+      display: none;
+    }
+
+    @include mq(md) {
+      display: block;
+    }
+
+    flex: 0 0 28%;
+    padding: 3 * $spacing $spacing/2 3 * $spacing $spacing/1.5;
+    background-color: white;
+    border-right: 1px solid $gray-light;
+
+    &__menu {
+      position: sticky;
+      top: 1.5 * $spacing;
+
+      &__title {
+        font-family: $font-family-base;
+        margin-bottom: $spacing/2;
+        font-size: ms(0);
+        font-weight: 600;
+      }
+
+      &__link {
+        text-decoration: none;
+        display: block;
+        margin: 0 (-$spacing/2) 0 (-$spacing/1.5);
+        color: $gray-medium;
+        padding: $spacing/2 $spacing/1.5;
+        transition: background-color $duration, color $duration;
+
+        &:hover {
+          background-color: lighten($brand-green, 55%);
+          color: a11y-color(ms(0), false, $brand-green, lighten($brand-green, 55%));
+        }
+
+        &--active,
+        &:active {
+          background-color: lighten($brand-green, 50%) !important;
+          color: a11y-color(ms(0), false, $brand-green, lighten($brand-green, 50%)) !important;
+        }
+      }
+    }
+
+    + .page__inner {
+      padding-left: 2 * $spacing;
+      padding-right: 2 * $spacing;
+    }
+  }
+
+  &__inner {
+    background-color: $gray-lightest;
+    padding: 3 * $spacing $spacing 2 * $spacing;
+
+    @include mq(md) {
+      padding: 3 * $spacing 3 * $spacing 2 * $spacing;
+    }
+  }
+
+  &__main {
+    flex: 1 0 70%;
+  }
+
+  &__content {
+
+    h2 {
+      font-weight: $font-weight-bold;
+      margin-top: 1.5 * $spacing;
+      margin-bottom: $spacing;
+    }
+
+    p {
+      margin-bottom: $spacing;
+      max-width: $text-line-length-xl;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    blockquote {
+      max-width: $text-line-length-xl;
+      background-color: transparentize($brand-peach, 0.75);
+      border-left: $spacing/2 solid $brand-peach;
+      margin: $spacing 0;
+      padding: $spacing;
+
+      p {
+        margin-bottom: 0;
+        font-size: ms(-1);
+      }
+    }
+  }
+
+  &__breadcrumb {
+    color: $text-color;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: $spacing/2;
+    color: $gray;
+
+    a {
+      color: $gray-dark;
+    }
+  }
+
+  &__title {
+    font-size: ms(3);
+    font-weight: $font-weight-bold;
+    margin-bottom: 2 * $spacing;
+  }
+
+  &__toc {
+    margin-bottom: 2 * $spacing;
+  }
+
+  &__toc,
+  &__footer-menu,
+  &__section-menu {
+    
+    &__title {
+      margin-left: 2 * $spacing;
+      font-weight: $font-weight-bold;
+      font-size: ms(0);
+      margin-bottom: $spacing/2;
+    }
+
+    li {
+      margin-left: 2 * $spacing;
+
+      + li {
+        margin-top: $spacing/4;
+      }
+
+      &::before {
+        border-bottom: 1px solid $gray;
+        vertical-align: middle;
+        display: block;
+        height: $line-height * 0.5em;
+        width: $spacing;
+        content: '';
+        float: left;
+        margin-left: -2 * $spacing;
+        margin-right: $spacing;
+      }
+    }
+
+    a {
+      color: $brand-blue;
+    }
+  }
+
+  &__footer-menu {
+    background-color: #fff;
+    padding: 3 * $spacing $spacing;
+
+    @include mq(md) {
+      padding: 2 * $spacing 3 * $spacing;
+    }
+  }
+}

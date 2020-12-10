@@ -42,9 +42,11 @@
 // partials with scope to a specific page
 //--------------------
 
-@import 'pages/home/hero';
-@import 'pages/home/services';
-@import 'pages/home/contact';
-@import 'pages/home/casestudy';
-@import 'pages/home/advice';
-@import 'pages/home/support';
+@import 'layouts/home/hero';
+@import 'layouts/home/services';
+@import 'layouts/home/contact';
+@import 'layouts/home/casestudy';
+@import 'layouts/home/advice';
+@import 'layouts/home/support';
+
+@import 'layouts/page';

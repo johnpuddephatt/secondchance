@@ -57,38 +57,30 @@ module.exports = class {
     renderError(error) {
         return `
         /* Error compiling stylesheet */
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            font-family: monospace;
-            font-size: 1.25rem;
-            line-height:1.5;
-        } 
-        body::before { 
-            content: ''; 
+
+        body::before {
+            content: '';
             background: #000;
             top: 0;
             bottom: 0;
             width: 100%;
             height: 100%;
-            opacity: 0.7;
+            opacity: 0.9;
             position: fixed;
         }
-        body::after { 
-            content: '${cssesc(error)}'; 
+        body::after {
+            font-size: 1.2em;
+            content: '${cssesc(error)}';
             white-space: pre;
+            font-family: monospace;
             display: block;
-            top: 0; 
+            top: 50%;
+            left: 50%;
+            line-height: 1.6;
+            transform: translate(-50%, -50%);
             padding: 30px;
-            margin: 50px;
             width: calc(100% - 100px);
+            max-width: 40em;
             color:#721c24;
             background: #f8d7da;
             border: solid 2px red;
