@@ -44,7 +44,7 @@ module.exports = {
           html: false,
           breaks: true,
           linkify: true
-      }).use(markdownItAbbr);
+      }).use(markdownItAbbr).use(markdownItAnchor);
 
       return md.render(str);
     },
