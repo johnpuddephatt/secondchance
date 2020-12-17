@@ -28,14 +28,16 @@ layout: base
           {% endif %}
           <h1 class="page__title">{{ title }}</h1>
 
-          {% if content | toc %}
+          {% if content | markdown | toc %}
             <nav class="page__toc">
               <h3 class="page__toc__title">On this page</h3>
-              {{ content | toc | safe }}
+              {{ content | markdown | toc | safe }}
             </nav>
           {% endif %}
 
-          {{ content | safe  }}
+          <div class="page__content__inner">
+            {{ content | prependAbbreviations | markdown | safe  }}
+          </div>
         </div>
       </div>
 
@@ -52,6 +54,18 @@ layout: base
           </ul>
         </nav>
       {% endif %}
+      <aside class="page__talk">
+        <div class="page__talk__text">
+          <h3 class="page__talk__heading">Need to talk to somebody?</h3>
+          <p>We provide specialist support and advice to people with brain injury, their families and friends.</p>
+          <a class="page__talk__call" href="tel:{{ meta.phone | replace(' ','') }}">
+            {% icon "phone" %} Call us<span class="call-us">: {{ meta.phone }}</span>
+          </a>
+        </div>
+        <div class="page__talk__image">
+          <img src="/assets/images/call-nurse.jpg" alt="Photo of Second Chance staff member smiling."/>
+        </div>
+      </aside>
     </article>
   </div>
 </div>

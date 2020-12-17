@@ -89,40 +89,79 @@
 
   &__content {
 
-    h2 {
-      font-weight: $font-weight-bold;
-      margin-top: 1.5 * $spacing;
-      margin-bottom: $spacing;
-    }
+    &__inner {
 
-    p {
-      margin-bottom: $spacing;
-      max-width: $text-line-length-xl;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    blockquote {
-      max-width: $text-line-length-xl;
-      background-color: lighten($brand-peach, 15%);
-      color: a11y-color(ms(0), false, $text-color, lighten($brand-peach, 17.5%));
-
-      border-left: $spacing/2 solid $brand-peach;
-      margin: $spacing 0;
-      padding: $spacing/2;
-
-      @include mq(md) {
-        padding: $spacing;
+      h2 {
+        font-weight: $font-weight-bold;
+        margin-top: 1.5 * $spacing;
+        margin-bottom: $spacing;
       }
 
       p {
-        margin-bottom: 0;
-        max-width: none;
+        margin-bottom: $spacing;
+        max-width: $text-line-length-xl;
 
-        @include mq(lg) {
-          font-size: ms(-1);
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      li {
+        max-width: $text-line-length-xl;
+
+        + li {
+          margin-top: $spacing/2;
+        }
+      }
+
+      ul, ol {
+        display: block;
+        margin-bottom: $spacing;
+      }
+
+      ul {
+        li {
+          list-style-type: none;
+          margin-left: $spacing;
+
+          &::before {
+            border-bottom: 1px solid $gray;
+            vertical-align: middle;
+            display: block;
+            height: $line-height * 0.5em;
+            content: '';
+            float: left;
+            width: $spacing/2;
+            margin-left: -$spacing;
+            margin-right: $spacing/2;
+          }        }
+      }
+
+      ol {
+        margin-left: $spacing;
+        list-style-type: decimal;
+      }
+
+      blockquote {
+        max-width: $text-line-length-xl;
+        background-color: lighten($brand-peach, 15%);
+        color: a11y-color(ms(0), false, $text-color, lighten($brand-peach, 17.5%));
+
+        border-left: $spacing/2 solid $brand-peach;
+        margin: $spacing 0;
+        padding: $spacing/2;
+
+        @include mq(md) {
+          padding: $spacing;
+        }
+
+        p {
+          margin-bottom: 0;
+          max-width: none;
+
+          @include mq(xl) {
+            font-size: ms(-1);
+          }
         }
       }
     }
@@ -141,7 +180,7 @@
   }
 
   &__title {
-    font-size: ms(3);
+    font-size: ms(4);
     font-weight: $font-weight-bold;
   }
 
@@ -158,6 +197,8 @@
   &__footer-menu,
   &__section-menu {
 
+
+
     &__title {
       font-weight: $font-weight-bold;
       font-size: ms(0);
@@ -170,14 +211,15 @@
     }
 
     li {
+      + li {
+        margin-top: $spacing/4;
+      }
+
+      list-style-type: none;
       margin-left: $spacing;
 
       @include mq(md) {
         margin-left: 2 * $spacing;
-      }
-
-      + li {
-        margin-top: $spacing/4;
       }
 
       &::before {
@@ -207,9 +249,58 @@
   &__footer-menu {
     background-color: #fff;
     padding: 3 * $spacing $spacing;
+    border-top: 1px solid $gray-light;
 
     @include mq(md) {
       padding: 2 * $spacing 3 * $spacing;
+    }
+  }
+
+  &__talk {
+    background-color: white;
+    padding: 2 * $spacing $spacing;
+    border-top: 1px solid $gray-light;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include mq(md) {
+      padding: $spacing 3 * $spacing;
+    }
+
+    &__text {
+      border-left: $spacing/4 solid $brand_green;
+      padding-left: $spacing;
+    }
+
+    &__image {
+      margin-left: auto;
+      padding-left: $spacing;
+
+      img {
+        display: block;
+        width: 6 * $spacing;
+        height: 6 * $spacing;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 9999px;
+      }
+    }
+
+    &__heading {
+      font-size: ms(2);
+      color: $brand-blue;
+      margin-bottom: $spacing/2;
+    }
+
+    &__call {
+      font-family: $font-family-heading;
+      display: inline-block;
+      color: $brand-green;
+      text-decoration: none;
+      font-size: ms(1);
+      margin-top: $spacing/4;
+      font-weight: $font-weight-black;
     }
   }
 }

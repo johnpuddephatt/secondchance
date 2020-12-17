@@ -1,9 +1,15 @@
+const markdownItAbbr = require('./markdown-it-abbr.js')
+const markdownItAnchor = require('markdown-it-anchor')
 const { DateTime } = require('luxon')
 
 module.exports = {
 
     prepend_page_section: function(title, section) {
       return section ? `${section}/${title}` : title;
+    },
+
+    prependAbbreviations: function(string) {
+      return "*[DVLA]: Driver and Vehicle Licensing Agency. This is the government organisation responsible for vehicles and driving licenses\n" + string;
     },
 
     where: function (array, key, value) {
@@ -31,6 +37,16 @@ module.exports = {
             chars.unshift(['&#', str[i].charCodeAt(), ';'].join(''))
         }
         return chars.join('')
+    },
+
+    markdown: function (str) {
+      const md = require('markdown-it')({
+          html: false,
+          breaks: true,
+          linkify: true
+      }).use(markdownItAbbr);
+
+      return md.render(str);
     },
 
     markdownify: function (str) {

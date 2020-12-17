@@ -1,0 +1,4 @@
+{
+  "layout": "section",
+  "permalink": "/{{ title | slug }}/index.html"
+}

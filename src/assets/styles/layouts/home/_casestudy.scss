@@ -1,13 +1,12 @@
 .home-casestudy {
+  position: relative;
+  background-color: $gray-lightest;
+  z-index: 0;
   padding: 2 * $spacing 0;
 
   @include mq(md) {
     padding: 4 * $spacing 0;
   }
-
-  position: relative;
-  background-color: $gray-lightest;
-  z-index: 0;
 
   .container {
     display: flex;
@@ -44,8 +43,7 @@
 
   &__heading {
     font-size: ms(5);
-    font-weight: $font-weight-bold;
-    color: a11y-color(ms(4), true, $brand-blue, $gray-lightest);
+    color: a11y-color(ms(5), true, $brand-blue, $gray-lightest);
     max-width: $text-line-length;
 
     &::after {
@@ -56,10 +54,6 @@
       margin-top: $spacing;
       background-color: $brand-blue;
       margin-bottom: $spacing;
-
-      @include orientation(landscape) {
-        margin-bottom: 1.75 * $spacing;
-      }
     }
   }
 

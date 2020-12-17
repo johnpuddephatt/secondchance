@@ -23,15 +23,15 @@
   &__title {
     line-height: $heading-line-height;
     font-weight: $font-weight-black;
-    color: a11y-color(ms(7), true, $brand-green);
+    color: a11y-color(ms(8), true, $brand-green);
     max-width: $text-line-length-short;
     margin-left: auto;
     margin-right: auto;
-    font-size: ms(6);
+    font-size: ms(7);
     margin-bottom: $spacing;
 
     @include orientation(landscape) {
-      font-size: ms(7);
+      font-size: ms(8);
       margin-bottom: 1 * $spacing;
     }
   }

@@ -2,6 +2,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
+const markdownItAbbr = require('markdown-it-abbr')
 const pluginTOC = require('eleventy-plugin-toc')
 const pluginSrcsetImg = require('eleventy-plugin-srcset')
 
@@ -49,12 +50,19 @@ module.exports = function (config) {
             breaks: true,
             linkify: true,
             typographer: true
-        }).use(markdownItAnchor)
+        }).use(markdownItAbbr).use(markdownItAnchor)
     )
 
     // Collections
     config.addCollection('pages', collection => {
-      return collection.getFilteredByGlob('src/pages/*.*');
+      return collection.getFilteredByGlob('src/pages/*.njk')
+        .sort(function(a, b) {
+          return Math.sign(a.data.order - b.data.order);
+        });
+    });
+
+    config.addCollection('sections', collection => {
+      return collection.getFilteredByGlob('src/sections/*.*');
     });
 
     // Layouts
@@ -82,7 +90,7 @@ module.exports = function (config) {
             data: 'data'
         },
         templateFormats: ['njk', 'md', '11ty.js'],
-        htmlTemplateEngine: 'njk',
+        // htmlTemplateEngine: 'njk'
         markdownTemplateEngine: 'njk'
     }
 }
