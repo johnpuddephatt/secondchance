@@ -9,6 +9,7 @@ const pluginSrcsetImg = require('eleventy-plugin-srcset')
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
 const shortcodes = require('./utils/shortcodes.js')
+const pairedShortcodes = require('./utils/pairedshortcodes.js')
 const iconsprite = require('./utils/iconsprite.js')
 
 module.exports = function (config) {
@@ -34,6 +35,10 @@ module.exports = function (config) {
     // Shortcodes
     Object.keys(shortcodes).forEach((shortcodeName) => {
         config.addShortcode(shortcodeName, shortcodes[shortcodeName])
+    })
+
+    Object.keys(pairedShortcodes).forEach((shortcodeName) => {
+        config.addPairedShortcode(shortcodeName, pairedShortcodes[shortcodeName])
     })
 
     // Icon Sprite
@@ -72,6 +77,7 @@ module.exports = function (config) {
     config.addLayoutAlias('section', 'section.njk')
 
     // Pass-through files
+    config.addPassthroughCopy('src/uploads')
     config.addPassthroughCopy('src/robots.txt')
     config.addPassthroughCopy('src/site.webmanifest')
     config.addPassthroughCopy('src/assets/images')

@@ -22,6 +22,7 @@ p {
 a {
   color: $brand-blue;
   text-decoration-color: transparentize($brand-blue, 0.85);
+  text-decoration-thickness: 0.15em;
   transition: text-decoration-color $duration;
   // text-underline-position: under;
 

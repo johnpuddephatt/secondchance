@@ -41,7 +41,7 @@ module.exports = {
 
     markdown: function (str) {
       const md = require('markdown-it')({
-          html: false,
+          html: true,
           breaks: true,
           linkify: true
       }).use(markdownItAbbr).use(markdownItAnchor);
@@ -51,7 +51,7 @@ module.exports = {
 
     markdownify: function (str) {
       const md = require('markdown-it')({
-          html: false,
+          html: true,
           breaks: true,
           linkify: true
       });
