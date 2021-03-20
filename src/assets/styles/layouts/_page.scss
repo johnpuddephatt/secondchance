@@ -45,6 +45,11 @@
         margin-bottom: $spacing/2;
         font-size: ms(0);
         font-weight: 600;
+
+        a {
+          color: $gray-darkest;
+          text-decoration: none;
+        }
       }
 
       &__link {
@@ -81,6 +86,47 @@
     @include mq(md) {
       padding: 3 * $spacing 3 * $spacing 2 * $spacing;
     }
+
+    &--section {
+      margin-top: 2 * $spacing;
+    }
+  }
+
+  &__section-title {
+    font-size: ms(4);
+    background-color: $brand-green;
+    display: inline-block;
+    color: white;
+    padding: $spacing/2 1.5 * $spacing;
+    margin-left: -$spacing/2;
+    margin-top: -2 * $spacing;
+    margin-bottom: 1.5 * $spacing !important;
+  }
+
+  &__section-header-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+    @include mq(lg) {
+      margin-top: -4.5 * $spacing;
+    }
+  }
+
+  &__section-content {
+    @include mq(lg) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__section-intro {
+    margin-bottom: $spacing;
+    flex: 0 0 50%;
+    padding-right: $spacing;
+    font-size: ms(1);
+    color: $brand-blue;
+    font-weight: $font-weight-bold;
   }
 
   &__main {
@@ -97,6 +143,11 @@
         margin-bottom: $spacing;
       }
 
+      h3 {
+        margin-bottom: $spacing/2;
+        font-weight: $font-weight-bold;
+      }
+
       p {
         margin-bottom: $spacing;
         max-width: $text-line-length-xl;
@@ -109,6 +160,18 @@
       img {
         max-width: 100%;
         height: auto;
+      }
+
+      figure {
+        max-width: $text-line-length-xl;
+      }
+
+      figcaption {
+        background-color: $brand-light-green;
+        font-size: ms(-1);
+        padding: $spacing/3 $spacing/2;
+        line-height: $heading-line-height;
+        font-weight: 500;
       }
 
       li {
@@ -149,10 +212,9 @@
 
       blockquote {
         max-width: $text-line-length-xl;
-        background-color: lighten($brand-peach, 15%);
-        color: a11y-color(ms(0), false, $text-color, lighten($brand-peach, 17.5%));
-
-        border-left: $spacing/2 solid $brand-peach;
+        background-color: lighten($brand-pink, 15%);
+        color: a11y-color(ms(0), false, $text-color, lighten($brand-pink, 17.5%));
+        border-left: $spacing/2 solid $brand-pink;
         margin: $spacing 0;
         padding: $spacing/2;
 
@@ -164,8 +226,34 @@
           margin-bottom: 0;
           max-width: none;
 
-          @include mq(xl) {
+          @include mq(lg) {
             font-size: ms(-1);
+          }
+
+          + p {
+            margin-top: $spacing/3;
+          }
+        }
+
+        .blockquote-text {
+          overflow: hidden;
+        }
+
+        &.tip {
+          background-color: lighten($brand-peach, 15%);
+          color: a11y-color(ms(0), false, $text-color, lighten($brand-peach, 17.5%));
+          border-left: $spacing/2 solid $brand-peach;
+
+          img {
+            float: left;
+            margin-left: -$spacing/2;
+            margin-right: $spacing/2;
+            width: 4 * $spacing;
+            height: 4 * $spacing;
+            border-radius: 9999px;
+            display: block;
+            object-fit: cover;
+            object-position: center;
           }
         }
       }
@@ -197,6 +285,10 @@
         position: relative;
         transition: background-color 1s;
         cursor: pointer;
+
+        &::-webkit-details-marker {
+          display: none;
+        }
 
         &:hover {
           background-color: darken($brand-very-light-blue, 5%);
@@ -272,10 +364,7 @@
 
   &__toc,
   &__footer-menu,
-  &__section-menu {
-
-
-
+  &__sectionmenu {
     &__title {
       font-weight: $font-weight-bold;
       font-size: ms(0);
@@ -322,6 +411,13 @@
       color: $brand-blue;
     }
   }
+
+  &__sectionmenu {
+    @include mq(lg) {
+      margin-left: $spacing;
+    }
+  }
+
 
   &__footer-menu {
     background-color: #fff;

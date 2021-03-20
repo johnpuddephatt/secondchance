@@ -16,7 +16,10 @@ module.exports = function (config) {
     // Plugins
     config.addPlugin(pluginRss)
     config.addPlugin(pluginNavigation)
-    config.addPlugin( pluginSrcsetImg, {})
+    config.addPlugin( pluginSrcsetImg, {
+      autoselector: '.page__content__inner img',
+      createCaptionFromTitle: true
+    })
     config.addPlugin(pluginTOC, {
       tags: ['h2'],
       wrapper: 'div'

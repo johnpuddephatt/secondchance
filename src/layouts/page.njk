@@ -8,7 +8,7 @@ layout: base
     {% if section_pages | length > 1 %}
       <div class="page__sidebar">
         <nav class="page__sidebar__menu">
-          <h3 class="page__sidebar__menu__title">{{ section | capitalize }}</h3>
+          <h3 class="page__sidebar__menu__title"><a href="/{{ section }}"">{{ section | capitalize }}</a></h3>
           {% for section_page in section_pages %}
           {%- set isCurrent = (section_page.url == page.url) -%}
           <a class="page__sidebar__menu__link{% if isCurrent %} page__sidebar__menu__link--active{% endif %}" href="{{ section_page.url }}">{{ section_page.data.title }}</a>
