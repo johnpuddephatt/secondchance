@@ -47,12 +47,18 @@
     margin-top: -0.35 * $spacing;
   }
 
+  &__talk {
+    margin-left: $spacing/4;
+  }
+
   &__call {
     margin: -0.6rem 0;
     font-weight: $font-weight-bold;
     font-family: $font-family-heading;
+    display: none;
 
     @include mq(md) {
+      display: inline-block;
       padding-right: 0;
     }
 
@@ -66,7 +72,7 @@
 
     svg {
       display: none;
-      
+
       @include orientation(landscape) {
         display: inline;
       }

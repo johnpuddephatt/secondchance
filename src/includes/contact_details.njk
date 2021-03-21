@@ -1,0 +1,5 @@
+<div class="contact-details">
+{% if meta.phone %}<a href="tel:{{ meta.phone | replace(' ','') }}">{% icon "phone" %} {{ meta.phone }}</a>{% endif %}
+{% if meta.email %}<a href="mailto:{{ meta.email }}">{% icon "email" %} {{ meta.email }}</a>{% endif %}
+{% if meta.address %}<a rel="noopener" target="_blank" href="https://www.google.com/maps/place/{{ meta.address | urlencode }}/">{% icon "letter" %} {{ meta.address.split(',').join(',<br>') | safe }}</a>{% endif %}
+</div>

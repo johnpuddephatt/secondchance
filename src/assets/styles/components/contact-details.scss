@@ -1,0 +1,17 @@
+.contact-details {
+  a {
+    display: block;
+    padding-left: $spacing;
+    padding-bottom: $spacing/2;
+  }
+  svg {
+    vertical-align: middle;
+    // float: left;
+    display: inline-block;
+    width: $spacing * 0.65;
+    height: auto;
+    opacity: 0.35;
+    margin-right: $spacing/3;
+    margin-left: -$spacing;
+  }
+}
