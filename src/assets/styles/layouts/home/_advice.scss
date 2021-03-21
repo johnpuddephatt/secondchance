@@ -46,13 +46,17 @@
     }
 
     .button {
+
       display: block;
       white-space: nowrap;
       font-family: $font-family-heading;
       margin-bottom: $spacing/2;
 
       @include mq(md) {
-        margin-bottom: $spacing;
+        &:first-child {
+          margin-top: -$spacing;
+        }
+        margin-bottom: $spacing/2;
       }
     }
   }

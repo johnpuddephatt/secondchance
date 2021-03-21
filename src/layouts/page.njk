@@ -18,18 +18,23 @@ layout: base
     {% endif %}
 
     <article class="page__main">
-      {% if image %}
-        {% srcset image, image_alt, 'page__header-image', 1200, 530, '(min-width: 880px) 75vw, 100vw' %}
-      {% endif %}
-      <div class="page__inner">
+
+      <div class="page__inner {% if not section %} page__inner--single {% endif %}">
+        {% if image %}
+          {% srcset image, image_alt, 'page__header-image page__header-image--single', 1200, 530, '(min-width: 880px) 75vw, 100vw' %}
+        {% endif %}
+
         <div class="page__content">
+
 
           {% if section %}
             <div class="page__breadcrumb">
               <a href="/">Home</a> > <a href="/{{ section }}">{{ section }}</a>
             </div>
+            <h1 class="page__title">{{ title }}</h1>
+          {% else %}
+          <h1 class="page__title page__title--single">{{ title }}</h1>
           {% endif %}
-          <h1 class="page__title">{{ title }}</h1>
 
           {% if content | markdown | toc %}
             <nav class="page__toc">
