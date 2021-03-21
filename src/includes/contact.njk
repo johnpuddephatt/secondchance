@@ -1,0 +1,30 @@
+<form name="contact" netlify>
+  <p class="form-row">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name" />
+  </p>
+  <p class="form-row">
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" />
+  </p>
+  <p class="form-row">
+    <label for="phone">Phone number</label>
+    <input id="phone" type="text" name="phone" />
+  </p>
+  <p class="form-row">
+    <label for="contact_preference">How should we contact you?</label>
+    <select id="contact_preference" name="contact_preference">
+      <option selected value="phone">Phone</option>
+      <option value="email">Email</option>
+      <option value="sms">Text message (SMS)</option>
+    </select>
+
+  </p>
+  <p class="form-row">
+    <label for="message">How can we help you?</label>
+    <textarea id="message" name="message"></textarea>
+  </p>
+  <p>
+    <button class="button" type="submit">Send</button>
+  </p>
+</form>
