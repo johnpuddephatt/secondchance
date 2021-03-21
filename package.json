@@ -29,7 +29,7 @@
     "critical": "^2.0.4",
     "cssesc": "^3.0.0",
     "del-cli": "^3.0.0",
-    "eleventy-plugin-srcset": "^0.3.0",
+    "eleventy-plugin-srcset": "^0.4.0",
     "eleventy-plugin-toc": "^1.1.0",
     "focus-trap": "^5.1.0",
     "focus-visible": "^5.1.0",
