@@ -138,6 +138,10 @@
 
   &__main {
     flex: 0 0 70%;
+
+    &--section {
+      flex: 1 0 70%;
+    }
   }
 
   &__content {
