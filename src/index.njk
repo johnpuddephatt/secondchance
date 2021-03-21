@@ -26,6 +26,7 @@ padding-bottom: 0;
     <div class="home-services__text">
       <h2 class="home-services__heading section-title">We’re here to help you begin your rehabilitation journey with therapy, advice and activities.</h2>
       <p>Our team can help you create your own personal improvement plan through a wide variety of support and assistance.</p>
+      <a class="button" href="/services">Learn about the services we provide</a>
     </div>
   </div>
   {% icon "loop", "home-services--loop", 660, 572 %}
@@ -52,11 +53,10 @@ padding-bottom: 0;
       <h2 class="home-advice__heading section-title">We can provide advice to help you understand some of the key issues.</h2>
     </div>
     <nav class="home-advice__sections">
-      <p class="button button--white">Family and relationship advice</p>
-      <p class="button button--white">Money advice</p>
-      <p class="button button--white">Physical health advice</p>
-      <p class="button button--white">Mental health advice</p>
-      <p class="button button--white">Urgent support</p>
+      {% set advice_pages = collections.pages | where("section", 'advice') %}
+      {% for page in advice_pages %}
+        <a class="button button--white" href="{{ page.url }}">{{ page.data.title }}</a>
+      {% endfor %}
     </nav>
   </div>
   {% icon "loop", "home-advice--loop", 660, 572 %}
