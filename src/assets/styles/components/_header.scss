@@ -18,7 +18,10 @@
   &__brand {
     display: inline-block;
     position: relative;
-    padding-left: 2.25 * $spacing;
+    padding-left: 1.6 * $spacing;
+    @include mq(md) {
+      padding-left: 2.25 * $spacing;
+    }
     text-decoration: none;
   }
 
@@ -38,17 +41,25 @@
 
   .icon--loop {
     position: absolute;
-    left: 0;
     top: 0;
-    width: 2 * $spacing;
+    width: 1.75 * $spacing;
     height: auto;
     opacity: 1;
     stroke-width: 0.3rem;
-    margin-top: -0.35 * $spacing;
+    margin-top: -0.25 * $spacing;
+    left: -$spacing/4;
+
+    @include mq(md) {
+      width: 2 * $spacing;
+      margin-top: -0.35 * $spacing;
+      left: 0;
+    }
   }
 
   &__talk {
-    margin-left: $spacing/3;
+    @include mq(md) {
+      margin-left: $spacing/3;
+    }
   }
 
   &__call {

@@ -81,7 +81,7 @@
 
   &__inner {
     background-color: $gray-lightest;
-    padding: 2 * $spacing $spacing 2 * $spacing;
+    padding: 2 * $spacing $spacing/2 2 * $spacing;
 
     @include mq(md) {
       padding: 3 * $spacing 3 * $spacing 2 * $spacing;
@@ -89,31 +89,38 @@
 
     &--section,
     &--single {
-      margin-top: 2 * $spacing;
+      padding-top: 0;;
+      @include mq(md) {
+        padding-top: 3 * $spacing;
+        margin-top: 2 * $spacing;
+      }
     }
   }
 
   &__header-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: -$spacing;
 
     &--section,
     &--single {
       display: block;
       width: 100%;
       height: auto;
+      margin-bottom: -$spacing;
+      margin-left: -$spacing;
+      margin-right: -$spacing;
+      width: calc(100% + #{2 * $spacing});
 
-      @include mq(lg) {
+      @include mq(md) {
         margin-top: -4.5 * $spacing;
       }
     }
 
-    &--single {
-      margin-left: -$spacing;
-      margin-right: -$spacing;
-      width: calc(100% + #{2 * $spacing});
+    &--section {
+      @include mq(md) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+      }
+
     }
   }
 
@@ -134,10 +141,12 @@
   }
 
   &__main {
-    flex: 0 0 70%;
+    @include mq(md) {
+      flex: 0 0 70%;
 
-    &--section {
-      flex: 1 0 70%;
+      &--section {
+        flex: 1 0 70%;
+      }
     }
   }
 
@@ -254,11 +263,19 @@
           overflow: hidden;
 
           img {
-            float: left;
-            margin-left: -$spacing/2;
-            margin-right: $spacing/2;
-            width: 4 * $spacing;
-            height: 4 * $spacing;
+            margin-bottom: $spacing/3;
+            width: 2.5 * $spacing;
+            height: 2.5 * $spacing;
+
+            @include mq(md) {
+              float: left;
+              margin-left: -$spacing/2;
+              margin-right: $spacing/2;
+              width: 4 * $spacing;
+              height: 4 * $spacing;
+            }
+
+
             border-radius: 9999px;
             display: block;
             object-fit: cover;
@@ -284,7 +301,7 @@
 
       summary {
         padding: $spacing/2 $spacing;
-        padding-right: 3 * $spacing;
+        padding-right: 3.25 * $spacing;
         background-color: $brand-very-light-blue;
         border-left: $spacing/2 solid $brand-blue;
         border-right: $spacing solid $brand-blue;
@@ -322,24 +339,39 @@
 
         h3 {
           font-weight: 500;
-          font-size: ms(3);
+          font-size: ms(2);
           color: a11y-color(ms(3), true, $brand-blue, $brand-very-light-blue);
+          margin-bottom: $spacing/4;
+          @include mq(md) {
+            font-size: ms(3);
+            margin-bottom: $spacing/3;
+          }
         }
 
         p {
           margin-bottom: 0;
+          font-size: ms(-1);
+          @include mq(md) {
+            font-size: ms(0);
+          }
         }
 
         img {
           position: absolute;
           padding: $spacing/3;
-          right: $spacing/2;
+          right: $spacing/4;
           top: 50%;
           transform: translateY(-50%);
-          width: 2.5 * $spacing;
-          height: 2.5 * $spacing;
+          width: 2 * $spacing;
+          height: 2 * $spacing;
           border-radius: 99999px;
           background-color: #fff;
+
+          @include mq(md) {
+            right: $spacing/3;
+            width: 2.5 * $spacing;
+            height: 2.5 * $spacing;
+          }
         }
       }
     }
@@ -370,7 +402,10 @@
       padding: $spacing/2 1.5 * $spacing;
       margin-left: -$spacing/2;
       margin-top: -2 * $spacing;
-      margin-bottom: 1.5 * $spacing !important;
+      margin-bottom: $spacing !important;
+      @include mq(md) {
+        margin-bottom: 1.5 * $spacing !important;
+      }
     }
   }
 
@@ -454,11 +489,11 @@
     background-color: white;
     padding: 2 * $spacing $spacing;
     border-top: 1px solid $gray-light;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 
     @include mq(md) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       padding: $spacing 3 * $spacing;
     }
 
@@ -468,8 +503,13 @@
     }
 
     &__image {
+      display: none;
       margin-left: auto;
       padding-left: $spacing;
+
+      @include mq(md) {
+        display: block;
+      }
 
       img {
         display: block;
