@@ -234,6 +234,10 @@
         list-style-type: decimal;
       }
 
+      iframe {
+        max-width: 100%;
+      }
+
       blockquote {
         max-width: $text-line-length-xl;
         background-color: lighten($brand-pink, 15%);
