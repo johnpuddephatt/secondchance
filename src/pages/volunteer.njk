@@ -1,0 +1,72 @@
+---
+title: Volunteer with us
+no_markdown: true
+---
+{% import "forms.njk" as forms %}
+
+<form name="volunteer" netlify>
+
+<fieldset>
+  <legend>About you</legend>
+  {{ forms.input('contact_name', label='Full name', required='true' ) | safe }}
+  {{ forms.input('contact_phone', label='Phone number') | safe }}
+  {{ forms.input('contact_email', type='email', label='Email address', required='true') }}
+  {{ forms.textarea('address', label='Your address') }}
+  {{ forms.input('date_of_birth', type='date', label='Date of birth', required='true') }}
+
+</fieldset>
+
+{{ forms.checkbox(
+'availability',
+label='When are you available?',
+options=[ 'Monday a.m. (9.30am – 12.30pm)',
+            'Monday p.m. (12.30pm – 3.00pm)',
+            'Tuesday a.m. (9.30am – 12.30pm)',
+            'Tuesday p.m. (12.30pm – 3.00pm)',
+            'Wednesday a.m. (9.30am – 12.30pm)',
+            'Wednesday p.m. (12.30pm – 3.00pm)',
+            'Thursday a.m. (9.30am – 12.30pm)',
+            'Thursday p.m. (12.30pm – 3.00pm)',
+            'Friday a.m. (9.30am – 12.30pm)',
+            'Friday p.m. (12.30pm – 3.00pm)'
+        ],
+hint="Please tick all that apply. Flexible times can be arranged."
+)
+}}
+
+
+<fieldset>
+  <legend>Your experience</legend>
+   {{ forms.textarea('skills_and_experience', label='What skills and experience can you bring to Second Chance?', hint='Please give brief details of any relevant previous employment, voluntary work, training, personal experience or interests.') }}
+   {{ forms.textarea('why_you_want_to', label='Why do you want to be a volunteer with Second Chance?') }}
+   {{ forms.textarea('what_you_can_bring', label='What do think Second Chance can offer you?') }}
+</fieldset>
+
+<fieldset>
+  <legend>References</legend>
+  <p>Please give us the names and addresses of two people who can be asked to provide references. References will not be taken up until after we have spoken to you.</p>
+  <h3>Reference one</h3>
+  {{ forms.input('referee_one_name', label='Name') }}
+  {{ forms.input('referee_one_phone', label='Phone number') }}
+  {{ forms.input('referee_one_email', type="email", label='Email address') }}
+  {{ forms.textarea('referee_one_address', label='Address') }}
+  {{ forms.input('referee_one_relationship', label='Relationship to you') }}
+  <br>
+  <h3>Reference two</h3>
+  {{ forms.input('referee_two_name', label='Name') }}
+  {{ forms.input('referee_two_phone', label='Phone number') }}
+  {{ forms.input('referee_two_email', type="email", label='Email address') }}
+  {{ forms.textarea('referee_two_address', label='Address') }}
+  {{ forms.input('referee_two_relationship', label='Relationship to you') }}
+
+</fieldset>
+
+<h3>Please note</h3>
+<p>Second Chance aims to promote equality of opportunity for all with the right mix of talent, skills and potential. We welcome applications from diverse candidates.  Criminal records will be taken into account for recruitment purposes only when the conviction is relevant.  Unless the nature of the work demands it you will not be asked to disclose convictions which are ‘spent’ under the Rehabilitation of Offenders Act 1974.  Having an ‘unspent’ conviction will not necessarily bar you from volunteering. This will depend on the circumstances and background to your offences.</p>
+<p>As Second Chance meets the requirements in respect of exempted questions under Rehabilitation of Offenders Act 1974, in positions for which it is appropriate, potential volunteers will be subject to a criminal record check from the Criminal Records Bureau, before their acceptance is confirmed.  This will include details of cautions, reprimands or final warnings, as well as convictions. </p>
+
+  <p>
+    <button class="button" type="submit">Submit</button>
+  </p>
+
+</form>

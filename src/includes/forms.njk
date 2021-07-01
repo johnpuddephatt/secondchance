@@ -1,0 +1,79 @@
+{% macro input(name, value='', label='', hint='', type='text', required='') %}
+  <div class="field">
+    <label class="label">{{ label or "Label" }}</label>
+    <div class="control">
+      <input
+        type="{{ type }}"
+        name="{{ name }}"
+        class="input"
+        {% if required %}required{% endif %}
+        {% if placeholder %} placeholder="{{ placeholder }}" {% endif %}
+        {% if value %} value="{{ value | escape }}" {% endif %}
+        />
+      {% if hint %}<p class="form-hint">{{ hint }}</p>{% endif %}
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro textarea(name, value='', label='', hint='') %}
+  <div class="field">
+    <label class="label">{{ label or "Label" }}</label>
+    <div class="control">
+      <textarea
+        name="{{ name }}"
+        class="textarea"
+        {% if placeholder %} placeholder="{{ placeholder }}" {% endif %}>{% if value %}{{ value | escape }}{% endif %}</textarea>
+      {% if hint %}<p class="form-hint">{{ hint }}</p>{% endif %}
+    </div>
+  </div>
+{% endmacro %}
+
+
+{% macro select(name, label, hint, value, placeholder, options) %}
+<div class="field">
+  <label for="select-{{ name }}">{{ label }}</label>
+  <div class="select">
+    <select id="select-{{ name }}" name="{{name}}">
+        {% if placeholder %}<option value="">{{ placeholder }}</option>{% endif %}
+        {% for option in options %}
+            <option value="{{ option }}"
+            {% if value == option %} selected{% endif %}>{{ option }}</option>
+        {% endfor %}
+    </select>
+  </div>
+  {% if hint %}<p class="form-hint">{{ hint | safe }}</p>{% endif %}
+</div>
+{% endmacro %}
+
+{% macro boolean(name, label, hint, value) %}
+<div class="field">
+    <label for="select-{{ name }}">
+        <span class="{% if classes.label %}{{ classes.label }}{% else %}form-label-bold{% endif %}">{{ label }}</span>
+        {% if hint %}<span class="form-hint">{{hint}}</span>{% endif %}
+
+    </label>
+    <div class="select">
+      <select id="select-{{ name }}" name="{{name}}">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+</div>
+{% endmacro %}
+
+
+{% macro checkbox(name, label, hint, value, placeholder, options) %}
+<fieldset class="multiple-choice-options">
+   <legend>
+        {{label}}
+   </legend>
+   {% if hint %}<p class="form-hint">{{ hint | safe }}</p>{% endif %}
+
+    {% for checkBox in options %}
+        <div class="multiple-choice">
+            <input id="{{name | slug }}-{{checkBox | slug }}" type="checkbox" name="{{name | slug }}[]" value="{{checkBox}}" />
+            <label for="{{name | slug}}-{{checkBox | slug }}">{{checkBox}}</label>
+        </div>
+    {% endfor %}
+</fieldset>
+{% endmacro %}

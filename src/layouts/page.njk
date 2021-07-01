@@ -44,7 +44,12 @@ layout: base
           {% endif %}
 
           <div class="page__content__inner">
-            {{ content | prependAbbreviations | markdown | safe  }}
+          {% if no_markdown %}
+            {{ content | safe  }}
+          {% else %}
+            {{ content | markdown | safe  }}
+          {% endif %}
+            
           </div>
         </div>
       </div>
