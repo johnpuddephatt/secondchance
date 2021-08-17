@@ -45,7 +45,7 @@ layout: base
       <h2 class="home-advice__heading section-title">We can provide advice to help you understand some of the key issues.</h2>
     </div>
     <nav class="home-advice__sections">
-      {% set advice_pages = collections.pages | where("section", 'advice') %}
+      {% set advice_pages = collections.pages | where("section", 'help-and-advice') %}
       {% for page in advice_pages %}
         <a class="button button--white" href="{{ page.url }}">{{ page.data.title }}</a>
       {% endfor %}
