@@ -32,7 +32,7 @@ module.exports = {
           height: 900,
           inline: true,
           penthouse: {
-            timeout: 300000
+            timeout: 900000
           }
         })
         return html
