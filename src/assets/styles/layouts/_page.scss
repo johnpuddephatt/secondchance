@@ -1,5 +1,4 @@
 .page {
-
   &__container {
     display: flex;
     flex-direction: row;
@@ -62,13 +61,23 @@
 
         &:hover {
           background-color: lighten($brand-green, 55%);
-          color: a11y-color(ms(0), false, $brand-green, lighten($brand-green, 55%));
+          color: a11y-color(
+            ms(0),
+            false,
+            $brand-green,
+            lighten($brand-green, 55%)
+          );
         }
 
         &--active,
         &:active {
           background-color: lighten($brand-green, 50%) !important;
-          color: a11y-color(ms(0), false, $brand-green, lighten($brand-green, 50%)) !important;
+          color: a11y-color(
+            ms(0),
+            false,
+            $brand-green,
+            lighten($brand-green, 50%)
+          ) !important;
         }
       }
     }
@@ -89,7 +98,7 @@
 
     &--section,
     &--single {
-      padding-top: 0;;
+      padding-top: 0;
       @include mq(md) {
         padding-top: 3 * $spacing;
         margin-top: 2 * $spacing;
@@ -98,7 +107,6 @@
   }
 
   &__header-image {
-
     &--section,
     &--single {
       display: block;
@@ -127,7 +135,6 @@
         margin-right: 0;
         width: 100%;
       }
-
     }
   }
 
@@ -158,9 +165,7 @@
   }
 
   &__content {
-
     &__inner {
-
       h2 {
         font-weight: $font-weight-bold;
         margin-top: 1.5 * $spacing;
@@ -206,7 +211,8 @@
         }
       }
 
-      ul, ol {
+      ul,
+      ol {
         display: block;
         margin-bottom: $spacing;
       }
@@ -226,7 +232,8 @@
             width: $spacing/2;
             margin-left: -$spacing;
             margin-right: $spacing/2;
-          }        }
+          }
+        }
       }
 
       ol {
@@ -241,7 +248,12 @@
       blockquote {
         max-width: $text-line-length-xl;
         background-color: lighten($brand-pink, 15%);
-        color: a11y-color(ms(0), false, $text-color, lighten($brand-pink, 17.5%));
+        color: a11y-color(
+          ms(0),
+          false,
+          $text-color,
+          lighten($brand-pink, 17.5%)
+        );
         border-left: $spacing/2 solid $brand-pink;
         margin: $spacing 0;
         padding: $spacing/2;
@@ -269,7 +281,12 @@
 
         &.tip {
           background-color: lighten($brand-peach, 15%);
-          color: a11y-color(ms(0), false, $text-color, lighten($brand-peach, 17.5%));
+          color: a11y-color(
+            ms(0),
+            false,
+            $text-color,
+            lighten($brand-peach, 17.5%)
+          );
           border-left: $spacing/2 solid $brand-peach;
           overflow: hidden;
 
@@ -286,7 +303,6 @@
               height: 4 * $spacing;
               margin-bottom: 0;
             }
-
 
             border-radius: 9999px;
             display: block;
@@ -347,8 +363,6 @@
           transform: translateY(-50%);
         }
 
-
-
         h3 {
           font-weight: 500;
           font-size: ms(2);
@@ -402,12 +416,12 @@
   }
 
   &__title {
-    font-size: ms(4);
+    font-size: ms(5);
     font-weight: $font-weight-bold;
 
     &--section,
     &--single {
-      font-size: ms(4);
+      font-size: ms(5);
       background-color: $brand-green;
       display: inline-block;
       color: white;
@@ -485,7 +499,6 @@
       margin-left: $spacing;
     }
   }
-
 
   &__footer-menu {
     background-color: #fff;
