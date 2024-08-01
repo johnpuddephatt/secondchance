@@ -13,93 +13,100 @@ const pairedShortcodes = require('./utils/pairedshortcodes.js')
 const iconsprite = require('./utils/iconsprite.js')
 
 module.exports = function (config) {
-    // Plugins
-    config.addPlugin(pluginRss)
-    config.addPlugin(pluginNavigation)
-    config.addPlugin( pluginSrcsetImg, {
-      autoselector: '.page__content__inner img',
-      createCaptionFromTitle: true
+  // Plugins
+  config.addPlugin(pluginRss)
+  config.addPlugin(pluginNavigation)
+  config.addPlugin(pluginSrcsetImg, {
+    autoselector: '.page__content__inner img',
+    createCaptionFromTitle: true
+  })
+  config.addPlugin(pluginTOC, {
+    tags: ['h2'],
+    wrapper: 'div'
+  })
+
+  // Filters
+  Object.keys(filters).forEach((filterName) => {
+    config.addFilter(filterName, filters[filterName])
+  })
+
+  // Transforms
+  Object.keys(transforms).forEach((transformName) => {
+    config.addTransform(transformName, transforms[transformName])
+  })
+
+  // Shortcodes
+  Object.keys(shortcodes).forEach((shortcodeName) => {
+    config.addShortcode(shortcodeName, shortcodes[shortcodeName])
+  })
+
+  Object.keys(pairedShortcodes).forEach((shortcodeName) => {
+    config.addPairedShortcode(shortcodeName, pairedShortcodes[shortcodeName])
+  })
+
+  // Icon Sprite
+  config.addNunjucksAsyncShortcode('iconsprite', iconsprite)
+
+  // Asset Watch Targets
+  config.addWatchTarget('./src/assets')
+
+  // Markdown
+  config.setLibrary(
+    'md',
+    markdownIt({
+      html: true,
+      breaks: true,
+      linkify: true,
+      typographer: true
     })
-    config.addPlugin(pluginTOC, {
-      tags: ['h2'],
-      wrapper: 'div'
-    })
+      .use(markdownItAbbr)
+      .use(markdownItAnchor)
+  )
 
-    // Filters
-    Object.keys(filters).forEach((filterName) => {
-        config.addFilter(filterName, filters[filterName])
-    })
+  // Collections
+  config.addCollection('pages', (collection) => {
+    return collection
+      .getFilteredByGlob('src/pages/*.njk')
+      .sort(function (a, b) {
+        return Math.sign(a.data.order - b.data.order)
+      })
+  })
 
-    // Transforms
-    Object.keys(transforms).forEach((transformName) => {
-        config.addTransform(transformName, transforms[transformName])
-    })
+  config.addCollection('sections', (collection) => {
+    return collection.getFilteredByGlob('src/sections/*.*')
+  })
 
-    // Shortcodes
-    Object.keys(shortcodes).forEach((shortcodeName) => {
-        config.addShortcode(shortcodeName, shortcodes[shortcodeName])
-    })
+  config.addCollection('posts', (collection) => {
+    return collection.getFilteredByGlob('src/posts/*.*')
+  })
 
-    Object.keys(pairedShortcodes).forEach((shortcodeName) => {
-        config.addPairedShortcode(shortcodeName, pairedShortcodes[shortcodeName])
-    })
+  // Layouts
+  config.addLayoutAlias('base', 'base.njk')
+  config.addLayoutAlias('post', 'post.njk')
+  config.addLayoutAlias('page', 'page.njk')
+  config.addLayoutAlias('section', 'section.njk')
 
-    // Icon Sprite
-    config.addNunjucksAsyncShortcode('iconsprite', iconsprite)
+  // Pass-through files
+  config.addPassthroughCopy('src/uploads')
+  config.addPassthroughCopy('src/robots.txt')
+  config.addPassthroughCopy('src/site.webmanifest')
+  config.addPassthroughCopy('src/assets/images')
+  config.addPassthroughCopy('src/assets/fonts')
 
-    // Asset Watch Targets
-    config.addWatchTarget('./src/assets')
+  // Deep-Merge
+  config.setDataDeepMerge(true)
 
-    // Markdown
-    config.setLibrary(
-        'md',
-        markdownIt({
-            html: true,
-            breaks: true,
-            linkify: true,
-            typographer: true
-        }).use(markdownItAbbr).use(markdownItAnchor)
-    )
-
-    // Collections
-    config.addCollection('pages', collection => {
-      return collection.getFilteredByGlob('src/pages/*.njk')
-        .sort(function(a, b) {
-          return Math.sign(a.data.order - b.data.order);
-        });
-    });
-
-    config.addCollection('sections', collection => {
-      return collection.getFilteredByGlob('src/sections/*.*');
-    });
-
-    // Layouts
-    config.addLayoutAlias('base', 'base.njk')
-    config.addLayoutAlias('post', 'post.njk')
-    config.addLayoutAlias('page', 'page.njk')
-    config.addLayoutAlias('section', 'section.njk')
-
-    // Pass-through files
-    config.addPassthroughCopy('src/uploads')
-    config.addPassthroughCopy('src/robots.txt')
-    config.addPassthroughCopy('src/site.webmanifest')
-    config.addPassthroughCopy('src/assets/images')
-    config.addPassthroughCopy('src/assets/fonts')
-
-    // Deep-Merge
-    config.setDataDeepMerge(true)
-
-    // Base Config
-    return {
-        dir: {
-            input: 'src',
-            output: 'dist',
-            includes: 'includes',
-            layouts: 'layouts',
-            data: 'data'
-        },
-        templateFormats: ['njk', 'md', '11ty.js'],
-        // htmlTemplateEngine: 'njk'
-        markdownTemplateEngine: 'njk'
-    }
+  // Base Config
+  return {
+    dir: {
+      input: 'src',
+      output: 'dist',
+      includes: 'includes',
+      layouts: 'layouts',
+      data: 'data'
+    },
+    templateFormats: ['njk', 'md', '11ty.js'],
+    // htmlTemplateEngine: 'njk'
+    markdownTemplateEngine: 'njk'
+  }
 }
