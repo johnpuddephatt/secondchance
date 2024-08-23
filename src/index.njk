@@ -26,24 +26,7 @@ layout: base
 </section>
 
 
-<section class="home-news">
-  <div class="container">
 
-<h2 class="section-title">Latest news</h2>
-<ul>
-
-{%- for post in collections.posts -%}
-  <li>
-    <a href="{{ post.data.url }}">
-        <h3>{{ post.data.title }}</h3>
-        <p>{{ post.data.description }}</p>
-        </a>
-        </li>
-{%- endfor -%}
-</ul>
-</div>
-
-</section>
 
 <section class="home-contact">
   <div class="container">
@@ -72,6 +55,31 @@ layout: base
     </nav>
   </div>
   {% icon "loop", "home-advice--loop", 660, 572 %}
+</section>
+
+<section class="home-news">
+  <div class="container">
+    <h2 class="section-title">Latest news</h2>
+    <ul>
+    {%- for post in collections.posts -%}
+      {% if (loop.index <= 4) %}
+
+      <li class="home-news--item">
+        <a target="_blank" href="{{ post.data.url }}">
+        <div class="home-news--item--date">
+          <div>{{ post.data.date | dateToFormat('dd')  }}</div>
+          <div>{{ post.data.date | dateToFormat('LLL yyyy')  }}</div>
+        </div>
+        <div>
+          <h3>{{ post.data.title }}</h3>
+          <p>{{ post.data.description }}</p>
+          </div>
+        </a>
+      </li>
+      {% endif %}
+    {%- endfor -%}
+    </ul>
+  </div>
 </section>
 
 <section class="home-casestudy">

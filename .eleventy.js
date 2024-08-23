@@ -77,7 +77,9 @@ module.exports = function (config) {
   })
 
   config.addCollection('posts', (collection) => {
-    return collection.getFilteredByGlob('src/posts/*.*')
+    return collection.getFilteredByGlob('src/posts/*.*').sort(function (a, b) {
+      return Math.sign(b.data.date - a.data.date)
+    })
   })
 
   // Layouts
