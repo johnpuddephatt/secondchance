@@ -1,15 +1,15 @@
 {
-    "title": "Second Chance",
-    "description": "We improve life after brain injury",
-    "smallprint": "Second Chance Headway Centre is a private limited company by guarantee #05992718 and also a registered charity #1121645",
-    "mobile_smallprint": "Use of this site constitutes acceptance of our [Privacy Policy](/privacy/) and [Cookie Statement](/cookies/)",
-    "url": "https://secondchancewakefield.com",
-    "phone": "01924 366 735",
-    "email": "rehab@schc.co.uk",
-    "address": "Second Chance Headway Centre, Almshouse Lane, Wakefield WF1 1AD",
-    "facebook": "https://www.facebook.com/Second-Chance-Headway-Centre-408610425969737/",
-    "twitter": "https://twitter.com/2ndchanceh_way",
-    "instagram" : "",
-    "lang": "en",
-    "locale": "en_uk"
+  "title": "Second Chance",
+  "description": "We improve life after brain injury",
+  "smallprint": "Second Chance Headway Centre is a private limited company by guarantee #05992718 and also a registered charity #1121645. \n\nOur Casework Service is commissioned by the Integrated Care Board; we provide services in the community for the NHS as part of their discharge pathways. Our therapy centre is a separate service that relies on charitable fundraising.",
+  "mobile_smallprint": "Use of this site constitutes acceptance of our [Privacy Policy](/privacy/) and [Cookie Statement](/cookies/)",
+  "url": "https://secondchancewakefield.com",
+  "phone": "01924 366 735",
+  "email": "rehab@schc.co.uk",
+  "address": "Second Chance Headway Centre, Almshouse Lane, Wakefield WF1 1AD",
+  "facebook": "https://www.facebook.com/Second-Chance-Headway-Centre-408610425969737/",
+  "twitter": "https://twitter.com/2ndchanceh_way",
+  "instagram": "",
+  "lang": "en",
+  "locale": "en_uk"
 }

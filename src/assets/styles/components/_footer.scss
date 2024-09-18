@@ -40,7 +40,7 @@
 
     @include mq(md) {
       margin-left: 2.75 * $spacing;
-      max-width: $text-line-length-long;
+      max-width: $text-line-length-xl;
     }
 
     a {
