@@ -131,3 +131,37 @@
     }
   }
 }
+
+.footer-logos {
+  display: flex;
+  gap: $spacing/1.5;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: $spacing;
+  @include mq(md) {
+    margin-left: 2.75 * $spacing;
+    margin-top: $spacing / 1.5;
+  }
+}
+.footer-logo {
+  width: 3 * $spacing;
+  height: auto;
+  opacity: 0.75;
+  @include mq(md) {
+    width: 4 * $spacing;
+  }
+
+  &.wide {
+    width: 5.5 * $spacing;
+    @include mq(md) {
+      width: 6.5 * $spacing;
+    }
+  }
+
+  &.small {
+    width: 2 * $spacing;
+    @include mq(md) {
+      width: 2.5 * $spacing;
+    }
+  }
+}
