@@ -1,9 +1,13 @@
 .header {
   background-color: #fff;
-  padding: $spacing 0;
+  padding: $spacing/2 0 $spacing;
   position: relative;
   z-index: 9;
   box-shadow: none;
+
+  @include mq(md) {
+    padding: $spacing 0;
+  }
 
   @include orientation(landscape) {
     box-shadow: $box-shadow;
@@ -11,8 +15,14 @@
 
   &__inner {
     display: flex;
+    flex-direction: column-reverse;
+    gap: $spacing;
     justify-content: space-between;
     align-items: center;
+    @include mq(md) {
+      gap: 0;
+      flex-direction: row;
+    }
   }
 
   &__brand {
@@ -57,7 +67,7 @@
   }
 
   &__talk {
-    @include mq(md) {
+    @include mq(sm) {
       margin-left: $spacing/3;
     }
   }
@@ -67,11 +77,6 @@
     font-weight: $font-weight-bold;
     font-family: $font-family-heading;
     display: none;
-
-    @include mq(md) {
-      display: inline-block;
-      padding-right: 0;
-    }
 
     .call-us {
       display: none;
