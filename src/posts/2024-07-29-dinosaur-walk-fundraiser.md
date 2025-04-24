@@ -1,5 +1,5 @@
 ---
-date: 2024-07-29
+date: 2024-05-29
 
 title: Walk like a dinosaur!
 description: Our members took part in a Jurassic Sponsored Walk around Pugneys Park in Wakefield – raising money for our centre
