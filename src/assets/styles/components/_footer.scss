@@ -10,6 +10,10 @@
 
   &__brand {
     position: relative;
+
+    @include mq(md) {
+      width: 47%;
+    }
   }
 
   &__name {
@@ -141,6 +145,7 @@
   @include mq(md) {
     margin-left: 2.75 * $spacing;
     margin-top: $spacing / 1.5;
+    flex-wrap: wrap;
   }
 }
 .footer-logo {
