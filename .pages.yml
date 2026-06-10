@@ -10,7 +10,7 @@ content:
         type: string
       - name: section
         type: string
-      - name: content
+      - name: body
         type: rich-text
   - name: post
     label: Posts
