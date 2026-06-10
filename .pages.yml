@@ -8,6 +8,10 @@ content:
     fields:
       - name: title
         type: string
+      - name: section
+        type: string
+      - name: content
+        type: rich-text
   - name: post
     label: Posts
     type: collection
