@@ -18,8 +18,6 @@ content:
     fields:
       - name: title
         type: string
-      - name: section
-        type: string
       - name: description
         type: string
       - name: url
