@@ -1,0 +1,21 @@
+media: media
+content:
+  - name: page
+    label: Pages
+    type: collection
+    path: src/pages
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        type: string
+  - name: post
+    label: Posts
+    type: collection
+    path: src/posts
+    fields:
+      - name: title
+        type: string
+      - name: description
+        type: string
+      - name: url
+        type: string
