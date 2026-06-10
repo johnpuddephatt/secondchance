@@ -11,3 +11,16 @@ content:
         type: string
       - name: body
         type: rich-text
+  - name: post
+    label: Posts
+    type: collection
+    path: src/posts
+    fields:
+      - name: title
+        type: string
+      - name: section
+        type: string
+      - name: description
+        type: string
+      - name: url
+        type: string
