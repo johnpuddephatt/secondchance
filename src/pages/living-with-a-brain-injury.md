@@ -2,16 +2,17 @@
 title: Living with a brain injury
 section: help-and-advice
 order: 5
+no_markdown: true
 ---
 ## What do I need to know about getting around?
 
 Public transport is a great way to maintain your independence and freedom. Although brain injury survivors sometimes face challenges when travelling around, public transport is increasingly becoming more and more accessible.
 
-> If public transport isn’t available near where you live, it’s worth remembering that many councils offer a community transport service. Contact your local authority to find out which community transport schemes may be available to you.
+> If public transport isn't available near where you live, it's worth remembering that many councils offer a community transport service. Contact your local authority to find out which community transport schemes may be available to you.
 
-The majority of buses and trains have disabled access ramps, an area for wheelchair users and priority seats for those with mobility issues. Many of the major bus companies also offer ‘journey assistance cards’ to make it easier for passengers with disabilities to ask for assistance.
+The majority of buses and trains have disabled access ramps, an area for wheelchair users and priority seats for those with mobility issues. Many of the major bus companies also offer 'journey assistance cards' to make it easier for passengers with disabilities to ask for assistance.
 
-You may be entitled to free or discounted bus, coach and rail travel. Get in touch with your local bus company to find out about disabled bus passes. You can also apply for a [disabled person’s rail card](https://www.disabledpersons-railcard.co.uk/) and a [disabled person’s coach card](https://www.nationalexpress.com/en/offers/coachcards/disabled).
+You may be entitled to free or discounted bus, coach and rail travel. Get in touch with your local bus company to find out about disabled bus passes. You can also apply for a [disabled person's rail card](https://www.disabledpersons-railcard.co.uk/) and a [disabled person's coach card](https://www.nationalexpress.com/en/offers/coachcards/disabled).
 
 [Learn more about getting around over on the main Headway website](https://www.headway.org.uk/about-brain-injury/individuals/brain-injury-and-me/stop-the-bus-a-guide-to-public-transport/).
 
@@ -29,6 +30,6 @@ The card can also provide brain injury survivors with added confidence in everyd
 
 Talk to your pharmacy to find out the easiest way to manage prescriptions. They may be able to deliver them to your door or send reminders to order more.
 
-You can also ask your GP about having your tablets given to you in a dosette box or blister pack so they’re easier to manage.
+You can also ask your GP about having your tablets given to you in a dosette box or blister pack so they're easier to manage.
 
 ![A photo of a pharmacist in a pharmacy. She is smiling. ](/uploads/pharmacist.jpg "Some pharmacists are able to deliver prescriptions or send you reminders to help you remember when to re-supply.")

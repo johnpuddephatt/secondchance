@@ -2,12 +2,13 @@
 title: Effects of brain injury
 section: help-and-advice
 order: 3
+no_markdown: true
 ---
 ## How does brain injury affect people?
 
 Everything depends on the severity of the injury. Even after a minor head injury, brain function can be temporarily impaired - this is sometimes called concussion. It can cause headaches, dizziness, fatigue, depression, irritability and memory problems. Most people who experience a minor head injury are symptom-free within two weeks. However, some can experience problems for months or years.
 
-The more severe the brain injury, the more pronounced the long-term effects are likely to be. Survivors of more severe brain injury may have complex long-term problems that affect their [personality](https://www.headway.org.uk/about-brain-injury/individuals/effects-of-brain-injury/emotional-effects/), their [relationships](https://www.headway.org.uk/about-brain-injury/individuals/relationships-after-brain-injury/) and their ability to lead an independent life. When facing a challenging and uncertain future, it’s important to make good use of the [rehabilitation](https://www.headway.org.uk/about-brain-injury/individuals/rehabilitation-and-continuing-care/rehabilitation/) and [support](https://www.headway.org.uk/supporting-you/) available. No-one should go through this alone.
+The more severe the brain injury, the more pronounced the long-term effects are likely to be. Survivors of more severe brain injury may have complex long-term problems that affect their [personality](https://www.headway.org.uk/about-brain-injury/individuals/effects-of-brain-injury/emotional-effects/), their [relationships](https://www.headway.org.uk/about-brain-injury/individuals/relationships-after-brain-injury/) and their ability to lead an independent life. When facing a challenging and uncertain future, it's important to make good use of the [rehabilitation](https://www.headway.org.uk/about-brain-injury/individuals/rehabilitation-and-continuing-care/rehabilitation/) and [support](https://www.headway.org.uk/supporting-you/) available. No-one should go through this alone.
 
 ## What are some of the most common examples?
 
@@ -39,7 +40,7 @@ You may experience some of the following:
 
 You may experience some of the following:
 
-- Balance difficulties 
+- Balance difficulties 
 - Bladder control difficulties
 - Coordination difficulties
 - Dizziness
@@ -49,10 +50,10 @@ You may experience some of the following:
 - Hearing problems
 - Incontinence
 - Involuntary movements
-- Loss of smell    
+- Loss of smell    
 - Loss of taste
 - Migraines
-- Mobility problems 
+- Mobility problems 
 - Pain
 - Paralysis (possibly on one side of your body more than the other)
 - Seizures
@@ -68,7 +69,7 @@ You may experience some of the following:
 You may experience some of the following:
 
 - Aggression
-- Disinhibition 
+- Disinhibition 
 - Frustration
 - Impulsive behaviour
 - Irritability
@@ -85,7 +86,7 @@ You may experience some of the following:
 - Anger
 - Anxiety
 - Depression
-- Lack of confidence 
+- Lack of confidence 
 - Lack of motivation
 - Mood swings
 - Worry

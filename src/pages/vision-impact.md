@@ -2,6 +2,7 @@
 title: Our vision and impact
 section: about
 order: 3
+no_markdown: true
 ---
 For over 40 years, Second Chance has provided a therapy-led day service for adults living with acquired or traumatic brain injury. In the face of every new challenge, we continue to grow, adapt and improve the ways we meet this vital need. And thanks to funding from the National Lottery, we've been able to extend our services further than ever before.
 

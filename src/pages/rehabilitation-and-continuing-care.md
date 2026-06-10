@@ -2,18 +2,19 @@
 title: Rehabilitation and continuing care
 section: help-and-advice
 order: 4
+no_markdown: true
 ---
 ## What will the rehabilitation journey look like?
 
 Rehabilitation after brain injury is unpredictable because every case is unique. During recovery, different parts of the brain take over the activities of the damaged areas and new nerve pathways can be established using undamaged brain cells. Engaging in different activities helps these alternative pathways to develop.
 
-The goal of rehabilitation is to help the brain learn new ways of working in order to minimise the long-term impact of the brain injury. Rehabilitation also helps the survivor and the family to cope with any remaining disabilities. It’s important to have realistic expectations. Everyone is different, and no two journeys are the same.
+The goal of rehabilitation is to help the brain learn new ways of working in order to minimise the long-term impact of the brain injury. Rehabilitation also helps the survivor and the family to cope with any remaining disabilities. It's important to have realistic expectations. Everyone is different, and no two journeys are the same.
 
 {% tip 'Bethan, Senior Rehabilitation Assistant', '/assets/images/bethan-icon.jpg' %}
 Rehabilitation ensures people are included in their communities, employment and education rather than being isolated from the mainstream. It can include support to learn basic communication skills; exercise classes to improve or maintain optimum health, wellbeing and occupation; and complex neurological rehabilitation following major trauma or stroke.
 {% endtip %}
 
-Recovery can be a slow process. Take advice from your health care workers - they will guide you when making big decisions. Like every journey, rehabilitation is rarely without the occasional bump or change in direction. People can improve quickly, then take a few steps back or ‘plateau’ and stay still for a while, rather like a game of snakes and ladders. It can be disheartening, but it’s to be expected.
+Recovery can be a slow process. Take advice from your health care workers - they will guide you when making big decisions. Like every journey, rehabilitation is rarely without the occasional bump or change in direction. People can improve quickly, then take a few steps back or 'plateau' and stay still for a while, rather like a game of snakes and ladders. It can be disheartening, but it's to be expected.
 
 ![Photo of the board game snakes and ladders. Snakes and ladders is how many people say the brain injury recovery process feel like.](/uploads/snakes-and-ladders.jpg)
 
@@ -36,19 +37,19 @@ Following an inpatient rehabilitation stay, some people may be transferred to a 
 
 If a person with a brain injury no longer requires intensive rehabilitation but still needs further support, there are a number of options for continuing care. This includes residential/nursing care, intermediate care and care at home.
 
-> Not every type of care will necessarily be available in your area - [contact us](/about/contact/) or talk your local Headway centre to find out what’s possible where you live. Further information on residential care units with specialist brain injury services is available from the Headway helpline, or you can search for a unit near you on [the Headway approved care providers page](https://www.headway.org.uk/supporting-you/in-your-area/approved-care-providers/).
+> Not every type of care will necessarily be available in your area - [contact us](/about/contact/) or talk your local Headway centre to find out what's possible where you live. Further information on residential care units with specialist brain injury services is available from the Headway helpline, or you can search for a unit near you on [the Headway approved care providers page](https://www.headway.org.uk/supporting-you/in-your-area/approved-care-providers/).
 
 **Types of ongoing care that may be available:**
 
 1. **Residential/nursing care**
-If your relative no longer requires intensive rehabilitation, but isn’t able to return home, they may be assessed as requiring long-term residential care. There are many residential homes which specialise in caring for people with brain injuries. These units provide long-term rehabilitation services and enable people with brain injuries to continue to maximise their potential for improvement. Funding for residential care is means-tested, so your loved one may have to contribute some of the costs themselves. However, if they are entitled to nursing care then this should be funded by NHS Continuing Healthcare. All residential care services should be registered with the Care Quality Commission (CQC). You can check whether a particular unit is registered and view reports on their service by contacting the CQC directly.
+If your relative no longer requires intensive rehabilitation, but isn't able to return home, they may be assessed as requiring long-term residential care. There are many residential homes which specialise in caring for people with brain injuries. These units provide long-term rehabilitation services and enable people with brain injuries to continue to maximise their potential for improvement. Funding for residential care is means-tested, so your loved one may have to contribute some of the costs themselves. However, if they are entitled to nursing care then this should be funded by NHS Continuing Healthcare. All residential care services should be registered with the Care Quality Commission (CQC). You can check whether a particular unit is registered and view reports on their service by contacting the CQC directly.
 2. **Intermediate care**
-If your relative does not require long-term care, they may be provided with NHS funded Intermediate Care. This is an integrated programme of therapy and treatment, which usually lasts no more than six weeks. It can be provided in your relative’s own home or in a care home and is designed to support the transition from hospital back into the home environment.
+If your relative does not require long-term care, they may be provided with NHS funded Intermediate Care. This is an integrated programme of therapy and treatment, which usually lasts no more than six weeks. It can be provided in your relative's own home or in a care home and is designed to support the transition from hospital back into the home environment.
 3. **Care at home**
-Where possible, try not to feel rushed into bringing your friend or relative home before you are ready. Be honest about your fears and anxieties. Try not to feel under pressure from your loved one, other family members, friends or staff. Only accept a proposed discharge date when you are certain the necessary assessments, support and equipment are all in place. Some hospitals may be able to offer a staged discharge to help ease the transition back home - it’s always worth asking to see what’s possible.
+Where possible, try not to feel rushed into bringing your friend or relative home before you are ready. Be honest about your fears and anxieties. Try not to feel under pressure from your loved one, other family members, friends or staff. Only accept a proposed discharge date when you are certain the necessary assessments, support and equipment are all in place. Some hospitals may be able to offer a staged discharge to help ease the transition back home - it's always worth asking to see what's possible.
 
 {% tip 'Bethan, Senior Rehabilitation Assistant', '/assets/images/bethan-icon.jpg' %}
-If you need help at home that wasn’t identified before discharge happens, you can make a referral to social services. They can carry out a health and social care assessment to find out what support you need.
+If you need help at home that wasn't identified before discharge happens, you can make a referral to social services. They can carry out a health and social care assessment to find out what support you need.
 {% endtip %}
 
 Your loved one may be entitled to various home care services, such as help with shopping, cleaning, cooking and managing finances, or day-to-day things like bathing, washing, getting up and going to bed. Meal deliveries, lunch clubs, recreational activities and outings are sometimes available too.
@@ -59,7 +60,7 @@ You can search for approved rehabilitation and care units on the main Headway we
 
 Availability and funding varies from place to place. However, most units - including private ones - accept NHS referrals and can be funded by the NHS. Other possible sources of funding include your local social services, medical insurance, compensation claims and self-funding. [You can find out more about Continuing Healthcare on the NHS website](https://www.nhs.uk/conditions/social-care-and-support-guide/money-work-and-benefits/nhs-continuing-healthcare/).
 
-Rehabilitation services can’t accept admissions until funding has been authorised. Many services accept referrals from outside their own area, so it’s worth looking into - just remember that places are often limited and waiting lists are long.
+Rehabilitation services can't accept admissions until funding has been authorised. Many services accept referrals from outside their own area, so it's worth looking into - just remember that places are often limited and waiting lists are long.
 
 > Remember - if you are having trouble securing social care, you can make a referral to social services. They may be able to provide help with things like healthcare, equipment, help around the home, or residential care. You can also contact the Headway helpline if you require support or have any questions relating to care.
 
@@ -80,9 +81,9 @@ The main purpose of social care is to help people achieve the outcomes that matt
 
 ## What do we do if we need some adaptations or equipment at home?
 
-An occupational therapist from the hospital, rehabilitation team or social services will probably visit your home to assess you and your relative’s needs. This can include things like installing ramps, widening doors, upgrading heating, adapting lighting controls and improving general access and movement around the home.
+An occupational therapist from the hospital, rehabilitation team or social services will probably visit your home to assess you and your relative's needs. This can include things like installing ramps, widening doors, upgrading heating, adapting lighting controls and improving general access and movement around the home.
 
-If this hasn’t happened or your circumstances have changed, get in touch with your local social services - they are best positioned to help you with this. If adaptations to the home are necessary to meet your loved one’s needs, and the work is reasonable and practical, a means-tested Disabled Facilities Grant should be available to help meet the costs.
+If this hasn't happened or your circumstances have changed, get in touch with your local social services - they are best positioned to help you with this. If adaptations to the home are necessary to meet your loved one's needs, and the work is reasonable and practical, a means-tested Disabled Facilities Grant should be available to help meet the costs.
 
 There are also a number of organisations who supply equipment, guidance on purchasing the right supplies for your needs and grants to help with the cost.
 

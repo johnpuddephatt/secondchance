@@ -1,6 +1,7 @@
 ---
 title: Privacy
 order: 3
+no_markdown: true
 ---
 In order to keep our records of your administration, sessions, and health and social related notes etc. we need your explicit permission.
 
@@ -8,8 +9,7 @@ That means that you understand what information we are keeping and who we might 
 
 - The Data Controller at Second Chance is Nathan Garbutt-Moore.
 - We will keep your notes and details to enable us to manage your membership, it will be kept as long as you remain a member and for 7 years afterwards, then it will be deleted. The notes are locked in our administration cabinets or password protected on our computer systems.
-- Only ‘clinical’ staff can see your clinical notes, and business staff can only see your address and financial information.
+- Only 'clinical' staff can see your clinical notes, and business staff can only see your address and financial information.
 - We only share information with other health and welfare Organisations, DWP, and Social Services.
 - You can make a request to see your data by asking your Keyworker for a request form, and you can ask to have your data changed or deleted by asking for a Change form.
 - Permission to keep your data is derived either by you giving us your explicit permission on the Data Permissions Form, or by our considered assessment of a Legitimate Vital Interest pertaining to you Health, Wellbeing or Safety as set out [on the Information Commissioners Office website](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-processing/legitimate-interests/).
-

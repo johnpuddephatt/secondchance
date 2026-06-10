@@ -2,6 +2,7 @@
 title: How our services can help
 section: services
 order: 1
+no_markdown: true
 ---
 Second Chance exists to improve people's lives after brain injury. Everyone has the right to an acceptable quality of life - disability should never be a barrier to acquiring the skills, knowledge and understanding needed to achieve this.
 
@@ -14,5 +15,5 @@ Through our therapies and support, we aim to help people:
 -   Improve their confidence and overall mental health
 -   Learn and adapt through group activities
 -   Increase their independence at home and in the community
--   Access specialist equipment and resources 
+-   Access specialist equipment and resources 
 -   Feel empowered to seek out new opportunities

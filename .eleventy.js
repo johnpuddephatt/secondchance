@@ -66,7 +66,7 @@ module.exports = function (config) {
   // Collections
   config.addCollection('pages', (collection) => {
     return collection
-      .getFilteredByGlob('src/pages/*.njk')
+      .getFilteredByGlob(['src/pages/*.njk', 'src/pages/*.md'])
       .sort(function (a, b) {
         return Math.sign(a.data.order - b.data.order)
       })

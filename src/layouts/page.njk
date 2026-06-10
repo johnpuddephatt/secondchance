@@ -36,10 +36,11 @@ layout: base
           <h1 class="page__title page__title--single">{{ title }}</h1>
           {% endif %}
 
-          {% if content | markdown | toc %}
+          {% set _rendered = content if no_markdown else content | markdown %}
+          {% if _rendered | toc %}
             <nav class="page__toc">
               <h3 class="page__toc__title">On this page</h3>
-              {{ content | markdown | toc | safe }}
+              {{ _rendered | toc | safe }}
             </nav>
           {% endif %}
 

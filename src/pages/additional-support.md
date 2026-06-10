@@ -2,6 +2,7 @@
 title: Additional support
 section: help-and-advice
 order: 7
+no_markdown: true
 ---
 ## Which welfare benefits are available?
 
@@ -16,7 +17,7 @@ For people who have difficulty working due to illness or disability
 3.  [Universal Credit](https://www.headway.org.uk/about-brain-injury/individuals/practical-issues/welfare-benefits/universal-credit/)
 For people who have difficulty working due to illness or disability
 
-When making a claim for benefits or appealing a decision you disagree with, it’s a good idea to get professional advice. You can learn all about getting [support with benefit claims and appeals](https://www.headway.org.uk/about-brain-injury/individuals/practical-issues/welfare-benefits/support-with-claims-and-appeals/) on the Headway website.
+When making a claim for benefits or appealing a decision you disagree with, it's a good idea to get professional advice. You can learn all about getting [support with benefit claims and appeals](https://www.headway.org.uk/about-brain-injury/individuals/practical-issues/welfare-benefits/support-with-claims-and-appeals/) on the Headway website.
 
 ![Two men sat at a desk talking](/uploads/legal-advice.jpg "Professional advice is recommended to ensure you receive the right support.")
 
@@ -32,8 +33,8 @@ The main Headway website has lots of great advice about [choosing a solicitor](h
 
 There are a number of charities in place relating to specific occupations that can provide additional support, such as:
 
--   [Cavell Nurses’ Trust](https://www.cavellnursestrust.org/)
+-   [Cavell Nurses' Trust](https://www.cavellnursestrust.org/)
 -   [The Coal Industry Social Welfare Organisation](https://www.ciswo.org.uk/about-us)
 -   [Lighthouse Club: The Construction Industry Charity](https://www.lighthouseclub.org/)
 
-It’s always worth looking online to see if there are any relevant organisations who can help.
+It's always worth looking online to see if there are any relevant organisations who can help.

@@ -2,10 +2,11 @@
 title: Activities
 section: services
 order: 3
+no_markdown: true
 ---
 The Second Chance centre is a dedicated space for people to meet and support each other. Our building offers a number of useful resources, including specialist IT equipment and an adapted kitchen.
 
-We offer people a chance to engage in activities they perhaps wouldn't try otherwise. The sessions we offer are subject to change and we’re always looking for new opportunities that meet the needs of our members, so [if you’re a professional or someone with relevant experience and you think you have something to offer please get in touch](/get-in-touch).
+We offer people a chance to engage in activities they perhaps wouldn't try otherwise. The sessions we offer are subject to change and we're always looking for new opportunities that meet the needs of our members, so [if you're a professional or someone with relevant experience and you think you have something to offer please get in touch](/get-in-touch).
 
 We run a wide variety of group workshops and one-on-one activities, both at our centre and out in the community, including:
 

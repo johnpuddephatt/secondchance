@@ -2,6 +2,7 @@
 title: Therapies and support
 section: services
 order: 2
+no_markdown: true
 ---
 
 We are able to offer various avenues of support and continually strive to find new and innovative ways of helping individuals and their family, friends and colleagues to understand and manage this hidden disability.

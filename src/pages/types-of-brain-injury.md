@@ -2,10 +2,11 @@
 title: Types of brain injury
 section: help-and-advice
 order: 2
+no_markdown: true
 ---
 ## What are the main types of brain injury?
 
-An acquired brain injury (ABI) is the umbrella term for all brain injuries that occur any time after someone is born. They can be caused by accidents or medical conditions at any point during someone’s life.
+An acquired brain injury (ABI) is the umbrella term for all brain injuries that occur any time after someone is born. They can be caused by accidents or medical conditions at any point during someone's life.
 
 There are two types of acquired brain injury - traumatic brain injury (TBI) and non-traumatic brain injury (NTBI). Traumatic brain injury is caused by an external impact or force. This includes things like falls, assaults, traffic accidents and sports injuries.
 
@@ -13,7 +14,7 @@ Non-traumatic brain injury can be caused by things like stroke, aneurysm, haemor
 
 ## What else do I need to know about the brain?
 
-The human brain is a very complex organ. It facilitates our thoughts, movements, memories and decisions. Medical science has helped us map the general structure of the brain, but there are lots of incredibly intricate parts we still do not fully understand. 
+The human brain is a very complex organ. It facilitates our thoughts, movements, memories and decisions. Medical science has helped us map the general structure of the brain, but there are lots of incredibly intricate parts we still do not fully understand. 
 
 This is why an injury to the brain can be very serious, and why the effects are so difficult to predict.
 
@@ -25,4 +26,4 @@ Different parts of the brain are in charge of different things:
 </figure>
 <p></p>
 
-The brain seems to have a remarkable capacity for re-learning many skills that have been lost. Sometimes, even people with severe injuries can make a reasonable recovery. Other times, the damage can be permanent. There is no way to be certain what will happen - it’s all about taking things one day at a time.
+The brain seems to have a remarkable capacity for re-learning many skills that have been lost. Sometimes, even people with severe injuries can make a reasonable recovery. Other times, the damage can be permanent. There is no way to be certain what will happen - it's all about taking things one day at a time.
