@@ -1,8 +1,6 @@
 ---
 title: Our staff and trustees
 section: about
-order: 2
-no_markdown: true
 ---
 
 ![Photo of our clinical manager, Sharlene Featherstone](/uploads/sharlene.jpg "As the centre's Clinical Lead and Nurse, Sharlene is passionate about helping improve lives after brain injury.")
@@ -20,7 +18,11 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 - **Sue Marsay** – Brain Injury Nurse
 - **Bethan Isaac** – Rehabilitation Co-ordinator
 - **Diane Olszewska** – Occupational Therapist
+<<<<<<< HEAD
 - **Chalotte Kilburn** – Occupational Therapist
+=======
+- **Chalotte Kilburn** –  Occupational Therapist
+>>>>>>> b1d57654d66b3e7fbde727d256af96102f219dcd
 - **Emily Kirkham** – Speech and Language Therapist
 - **Vikki Murray** – Specialist Neurophysiotherapist
 
@@ -31,13 +33,21 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 - **Shelly Sanderson** – Senior Support Worker
 - **Lucy Hoyle** – Community Case Worker
 - **Georgie Bottomley** – Community Case Worker
+<<<<<<< HEAD
 - **Morgan Oliver** – Case Worker
+=======
+- **Amani Fiaz** – Community Case Worker
+>>>>>>> b1d57654d66b3e7fbde727d256af96102f219dcd
 - **Sally Carrington** – Music Teacher and Support Worker
 - **Liz Cassidy** – Support Worker
 - **Nikki Jeffries** – Support Worker
 - **Alex Linstead** – Support Worker
 - **Ellis Carrington** – Bank Support Worker
 - **Angie Stanley** – Bank Support Worker
+<<<<<<< HEAD
+=======
+- **James Bishop** – Bank Support Worker
+>>>>>>> b1d57654d66b3e7fbde727d256af96102f219dcd
 - **Gail Flynn** – Bank Support Worker
 - **Trish Lockwood** – Domestic Worker
 
@@ -47,7 +57,7 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 - **Ken Linton** – Trauma and Orthopaedic Surgeon
 - **Elizabeth Corbett** - Former Social Worker
 - **Peter Bourne** - Member representative
-- **Shabnam Nazir** – Carer and volunteer Secretary
+- **Shabnam Nazir** – Carer and Volunteer Secretary
 
 ## Patrons
 
