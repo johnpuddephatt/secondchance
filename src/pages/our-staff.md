@@ -4,42 +4,42 @@ section: about
 order: 2
 no_markdown: true
 ---
+
 ![Photo of our clinical manager, Sharlene Featherstone](/uploads/sharlene.jpg "As the centre's Clinical Lead and Nurse, Sharlene is passionate about helping improve lives after brain injury.")
 
 Second Chance is more than just a building - it's a philosophy of care for people whose lives have been affected by brain injury. Our team of dedicated, highly trained staff and volunteers are the most important resource we have for delivering the high standard of support we offer.
 
 ## Management
 
--   **Nathan Garbutt-Moore** ([nathan@schc.co.uk](mailto:nathan@schc.co.uk)) – Operations Manager
--   **Sharlene Featherstone RN** ([sharlene@schc.co.uk](mailto:sharlene@schc.co.uk)) – Clinical Lead and Nurse
+- **Nathan Garbutt-Moore** ([nathan@schc.co.uk](mailto:nathan@schc.co.uk)) – Operations Manager
+- **Sharlene Featherstone RN** ([sharlene@schc.co.uk](mailto:sharlene@schc.co.uk)) – Clinical Lead and Nurse
 
 ## Clinical Staff
 
--   **Gemma Burton** – Specialist Occupational Therapist
--   **Sue Marsay** – Brain Injury Nurse
--   **Bethan Isaac** – Rehabilitation Co-ordinator
--   **Diane Olszewska** – Occupational Therapist
--   **Chalotte Kilburn** –  Occupational Therapist
--   **Emily Kirkham** – Speech and Language Therapist
--   **Vikki Murray** – Specialist Neurophysiotherapist
+- **Gemma Burton** – Specialist Occupational Therapist
+- **Sue Marsay** – Brain Injury Nurse
+- **Bethan Isaac** – Rehabilitation Co-ordinator
+- **Diane Olszewska** – Occupational Therapist
+- **Chalotte Kilburn** – Occupational Therapist
+- **Emily Kirkham** – Speech and Language Therapist
+- **Vikki Murray** – Specialist Neurophysiotherapist
 
 ## Support Staff
 
--   **Louise Sharp** – Finance
--   **Jane Mountain** – Secretary and Receptionist
--   **Shelly Sanderson** – Senior Support Worker
--   **Lucy Hoyle** – Community Case Worker
--   **Georgie Bottomley** – Community Case Worker
--   **Amani Fiaz** – Community Case Worker
--   **Sally Carrington** – Music Teacher and Support Worker
--   **Liz Cassidy** – Support Worker
--   **Nikki Jeffries** – Support Worker
--   **Alex Linstead** – Support Worker
--   **Ellis Carrington** – Bank Support Worker
--   **Angie Stanley** – Bank Support Worker
--   **James Bishop** – Bank Support Worker
--   **Gail Flynn** – Bank Support Worker
--   **Trish Lockwood** – Domestic Worker
+- **Louise Sharp** – Finance
+- **Jane Mountain** – Secretary and Receptionist
+- **Shelly Sanderson** – Senior Support Worker
+- **Lucy Hoyle** – Community Case Worker
+- **Georgie Bottomley** – Community Case Worker
+- **Morgan Oliver** – Case Worker
+- **Sally Carrington** – Music Teacher and Support Worker
+- **Liz Cassidy** – Support Worker
+- **Nikki Jeffries** – Support Worker
+- **Alex Linstead** – Support Worker
+- **Ellis Carrington** – Bank Support Worker
+- **Angie Stanley** – Bank Support Worker
+- **Gail Flynn** – Bank Support Worker
+- **Trish Lockwood** – Domestic Worker
 
 ## Trustees
 
@@ -54,7 +54,6 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 - **Neil Fox MBE** - former Rugby League Player
 - **Gaynor Barnes** - former ITV News Presenter
 - **John Godber OBE** - Playwright and Creative Director of Theare Royal Wakefield
-
 
 We also have several amazing volunteers and are proud to be part of the Citizens Coin scheme.
 If you would like to apply to volunteer with us, please get in touch [rehab@schc.co.uk](mailto:rehab@schc.co.uk)
