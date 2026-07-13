@@ -42,7 +42,7 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 ## Trustees
 
 - **Shaun Deakin** – Business and Projects Leader
-- **Ken Linton** – Trauma and Orthopaedic Surgeon
+- **Kenneth Linton** – Trauma and Orthopaedic Surgeon
 - **Elizabeth Corbett** - Former Social Worker
 - **Peter Bourne** - Member representative
 - **Shabnam Nazir** – Carer and Volunteer Secretary
