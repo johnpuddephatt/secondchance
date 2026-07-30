@@ -28,7 +28,7 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 - **Jane Mountain** – Secretary and Receptionist
 - **Shelly Sanderson** – Senior Support Worker
 - **Lucy Hoyle** – Community Case Worker
-- **Georgie Bottomley** – Community Case Worker
+- **Georgie Gillies** – Caseworker and Trainee Social Worker
 - **Morgan Oliver** – Case Worker
 - **Sally Carrington** – Music Teacher and Support Worker
 - **Liz Cassidy** – Support Worker
