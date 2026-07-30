@@ -37,6 +37,7 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 - **Ellis Carrington** – Bank Support Worker
 - **Angie Stanley** – Bank Support Worker
 - **Gail Flynn** – Bank Support Worker
+- **Cloud Sutheran** – Bank Support Worker
 - **Trish Lockwood** – Domestic Worker
 
 ## Trustees
