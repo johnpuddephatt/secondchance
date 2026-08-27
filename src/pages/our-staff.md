@@ -21,6 +21,7 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 - **Charlotte Kilburn** – Occupational Therapist
 - **Emily Kirkham** – Speech and Language Therapist
 - **Vikki Murray** – Specialist Neurophysiotherapist
+- **Ellis Carrington** – Rehab Assistant
 
 ## Support Staff
 
@@ -30,11 +31,11 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 - **Lucy Hoyle** – Community Case Worker
 - **Georgie Gillies** – Caseworker and Trainee Social Worker
 - **Morgan Oliver** – Case Worker
+- **Celest Richards** – Case Worker
 - **Sally Carrington** – Music Teacher and Support Worker
 - **Liz Cassidy** – Support Worker
 - **Nikki Jeffries** – Support Worker
 - **Alex Linstead** – Support Worker
-- **Ellis Carrington** – Bank Support Worker
 - **Angie Stanley** – Bank Support Worker
 - **Gail Flynn** – Bank Support Worker
 - **Cloud Sutheran** – Bank Support Worker
