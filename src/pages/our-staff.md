@@ -32,6 +32,7 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 - **Georgie Gillies** – Caseworker and Trainee Social Worker
 - **Morgan Oliver** – Case Worker
 - **Celest Richards** – Case Worker
+- **Amy Dalby** – Case Worker
 - **Sally Carrington** – Music Teacher and Support Worker
 - **Liz Cassidy** – Support Worker
 - **Nikki Jeffries** – Support Worker
@@ -51,7 +52,7 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 
 ## Patrons
 
-- **Neil Fox MBE** - former Rugby League Player
+- **Neil Fox CBE** - former Rugby League Player
 - **Gaynor Barnes** - former ITV News Presenter
 - **John Godber OBE** - Playwright and Creative Director of Theare Royal Wakefield
 
