@@ -28,11 +28,11 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 - **Louise Sharp** – Finance
 - **Jane Mountain** – Secretary and Receptionist
 - **Shelly Sanderson** – Senior Support Worker
-- **Lucy Hoyle** – Community Case Worker
 - **Georgie Gillies** – Caseworker and Trainee Social Worker
-- **Morgan Oliver** – Case Worker
-- **Celest Richards** – Case Worker
-- **Amy Dalby** – Case Worker
+- **Lucy Hoyle** – Caseworker
+- **Morgan Oliver** – Caseworker
+- **Celest Richards** – Caseworker
+- **Amy Dalby** – Caseworker
 - **Sally Carrington** – Music Teacher and Support Worker
 - **Liz Cassidy** – Support Worker
 - **Nikki Jeffries** – Support Worker
