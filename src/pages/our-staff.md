@@ -9,8 +9,8 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 
 ## Management
 
-- **Nathan Garbutt-Moore** ([nathan@schc.co.uk](mailto:nathan@schc.co.uk)) – Operations Manager
-- **Sharlene Featherstone RN** ([sharlene@schc.co.uk](mailto:sharlene@schc.co.uk)) – Clinical Lead and Nurse
+- **Nathan Garbutt-Moore** ([nathan@schc.co.uk](mailto:nathan@schc.co.uk)) – Managing Director
+- **Sharlene Featherstone RN** ([sharlene@schc.co.uk](mailto:sharlene@schc.co.uk)) – Service Manager and Registered Nurse
 
 ## Clinical Staff
 
@@ -59,6 +59,6 @@ Second Chance is more than just a building - it's a philosophy of care for peopl
 We also have several amazing volunteers and are proud to be part of the Citizens Coin scheme.
 If you would like to apply to volunteer with us, please get in touch [rehab@schc.co.uk](mailto:rehab@schc.co.uk)
 
-{% tip 'Nathan, Operations Manager at Second Chance', '/assets/images/nathan-icon.jpg' %}
+{% tip 'Nathan, Managing Director', '/assets/images/nathan-icon.jpg' %}
 Our dedicated, highly trained staff and volunteers are the most important resource we have for helping our members.
 {% endtip %}
